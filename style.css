@@ -1,0 +1,225 @@
+/*The Montserrat Font I imported from Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+.Main_Headings {
+color: black;
+font-size: large;
+font-weight: bold;
+text-align: left;
+text-decoration: aqua;
+text-shadow: 20px;
+word-spacing: 5px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif; 
+    color: aliceblue;
+    background-color: rgb(51, 31, 33);
+    background-image: url('https://cdn1.sph.harvard.edu/wp-content/uploads/sites/21/2020/05/AI.jpg');
+    background-attachment: scroll;
+    word-spacing: 5px;
+}
+
+.HeaderFooter {
+    background-color:lightseagreen;
+    font-family: 'Montserrat', sans-serif; 
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+#HeaderTable {
+    width:100%; 
+    border-spacing: 10px;
+}
+
+#LogoTD {
+    text-align: left;
+    column-width: 40%;
+}
+
+#LogoIMG {
+    width: 20%;
+    height: auto;
+}
+
+.HeaderNav {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    column-width: 20%;
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+    white-space: nowrap;
+    overflow: auto;
+    word-spacing: 5px;
+}
+
+.HeaderNav:active {
+    background-color:cyan;
+  }
+
+#BodyTable {
+    width: 100%;
+    padding-left: 6%;
+    padding-top: 6%;
+    padding-right: 6%;
+    padding-bottom: 6%;
+}
+
+#FooterTable {
+    width:100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.FooterTD {
+    text-align: left;
+    column-width: 30%;
+    word-spacing: 5px;
+}
+
+#FooterMapTD {
+     text-align: right;
+     column-width: 40%;
+}
+
+.FooterSocialLogo {
+    width: 30px;
+    height: 30px;
+}
+
+.BodyHeading {
+    text-align:left;
+    column-width: 50%;
+    padding-right: 5%;
+    background-color: black;
+    word-spacing: 5px;
+}
+
+.LeftBodyTd {
+    text-align:left;
+    column-width: 50%;
+    padding-right: 15%;
+    background-color: black;
+    text-indent: 10px;
+    word-spacing: 5px;
+}
+
+.RightImgBody {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-position: top;
+    background-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#AboutHeadingBody {
+    text-align:left;
+    column-width: 50%;
+    padding-right: 5%;
+    font-weight: bolder;
+    font-size: larger;
+    word-spacing: 5px;
+}
+
+.AboutImg {
+    width: 350px;
+    height: 400px;
+    border-radius: 50%;
+    object-position:center;
+    vertical-align: middle;  
+}
+
+.AboutTD {
+    text-align:justify;
+    column-width: 50%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    background-color: black;
+    text-indent: 10px;
+    word-spacing: 5px;
+}
+
+#AboutRef {
+    text-align:center;
+    padding-left: 5%;
+    padding-top: 5%;
+    background-color: black;
+    word-spacing: 5px;
+    padding-bottom: 5px;
+}
+
+#ContactBodyLeftTD {
+    text-align:left;
+    column-width: 70%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    background-color: black;
+    word-spacing: 5px;
+}
+
+#ContactBodyRightTD {
+    column-width: 30%;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    word-spacing: 5px;
+    background-color: black;
+}
+
+input[type=text], select {
+    width:50%;
+    padding:12px 20px;
+    margin:8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=phone], select {
+    width:50%;
+    padding:12px 20px;
+    margin:8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width:50%;
+    padding:12px 20px;
+    margin:8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 50%;
+    background-color:darkslategray;
+    color: aliceblue;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+input[type=submit]:hover {
+    background-color:darkolivegreen
+}
+
+#formstyling {
+    background-color:rgb(13, 43, 43);
+    text-align: center;
+    padding-top: 5%;
+}

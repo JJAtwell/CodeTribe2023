@@ -4,35 +4,37 @@
     Jocelyn Atwell
 </title>    
 
-<header style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+<head>
+    <link rel="stylesheet" href="../Jocelyn Atwell CodeTribe Bootcamp 2023/style.css">
+</head>
+
+<header>
     <!--Header of the websites for navigation-->
-    <div style="background-color:lightseagreen;">
-        <table style="width:100%; border-spacing: 10px;">
+    <div class="HeaderFooter">
+        <table id="HeaderTable">
             <tr>
                 <!--The logo within the header-->
-                <td style="text-align: left;column-width: 40%;">
+                <td id="LogoTD">
                     <nav>
                     <a href ="../Jocelyn Atwell CodeTribe Bootcamp 2023/index.html">
-                        <img src = "../Jocelyn Atwell CodeTribe Bootcamp 2023/Assets/Logos/Smart-Data-Analytics.png" style="width: 20%;height: auto;">
+                        <img src = "../Jocelyn Atwell CodeTribe Bootcamp 2023/Assets/Logos/Smart-Data-Analytics.png" id="LogoIMG">
                     </a>
                     </nav>
                 </td>
                 <!--The Home navigation tab-->
-                <td style="text-align: left;margin-left: 20px;margin-right: 20px;column-width: 20%;padding-left: 70px !important;padding-right: 70px !important;">
+                <td class="HeaderNav" class="active">
                     <nav>
                     <a href="../Jocelyn Atwell CodeTribe Bootcamp 2023/index.html">Home</a>
                     </nav>
                 </td>
                 <!--The About Me navigation tab-->
-                <td style="text-align: left;margin-left: 20px;margin-right: 20px;column-width: 20%;padding-left: 70px !important;padding-right: 70px !important;white-space: nowrap;
-                overflow: auto">
+                <td class="HeaderNav" class="active">
                     <nav>
                     <a href="../Jocelyn Atwell CodeTribe Bootcamp 2023/About Me.html">About Me</a>
                     </nav>
                 </td>
                 <!--The Contact Us navigation tab-->
-                <td style="text-align: left;margin-left: 20px;margin-right: 20px;column-width: 20%;padding-left: 70px !important;padding-right: 70px !important;white-space: nowrap;
-                overflow: auto">
+                <td class="HeaderNav" class="active">
                     <nav>
                     <a href="#">Contact Us</a>
                     </nav>
@@ -42,16 +44,18 @@
     </div>
 </header>
 
-<body style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+<body>
 <!--Main content of the website-->
     <div>
-        <table style="width: 100%; padding-left: 6%;padding-top: 6%;padding-right: 6%;padding-bottom: 6%;">
+        <table id="BodyTable">
             <tr>
-                <td colspan = "2" style="text-align:center; column-width: width 50%;padding-right: 5%;"><h2>Contact Us</h2></td>
+                <td colspan = "2"><h2>Contact Us</h2></td>
                 <!--Contact Information-->
             </tr>
             <tr>
-                <td style="text-align:left; column-width: width 50%;padding-right: 30%;">
+                <td id="ContactBodyLeftTD">
+                    <p>Contact Information of Jocelyn Atwell:</p>
+                    <br />
                     <p>
                         <b>Contact Person:</b> Jocelyn Atwell
                         <br />
@@ -63,24 +67,64 @@
                         <br />
                         <br />
                         <b>Physical Address:</b> 36 Aasvoel Street
-                        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pescodia
-                        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kimberley
-                        <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8309
+                        <br /><p style = "text-indent: 22vh;">Pescodia</p>
+                        <p style = "text-indent: 22vh;">Kimberley</p>
+                        <p style = "text-indent: 22vh;">Northern Cape</p>
+                        <p style = "text-indent: 22vh;">8309</p>
                     </p>
                 </td>
-                <td>
-                    <h4>Feedback:</h4>
-                    <input type ="text" style="width: 100%;height: 300px;font-size: medium;">
+                <td id="ContactBodyRightTD">
+                    <h4>Kindly leave your contact information below:</h4>
+                    <p><i>Rest assured we will respond as soon as we can.</i></p>
+
+                    <form action = "/action_page.php" id="formstyling">
+                        <label for="FirstName">First Name</label>
+                        <br />
+                        <input type="text" id="FirstName" name="firstname" placeholder="Your name...">
+                        <br />
+                        <label for="LastName">Last Name</label>
+                        <br />
+                        <input type="text" id="LastName" name="lastname" placeholder="Your last name...">
+                        <br />
+                        <label for="Province">Province</label>
+                        <br />
+                        <select id="Province" name="province">
+                            <option value="northern cape">Northern Cape</option>
+                            <option value="north west">North West</option>
+                            <option value="western cape">Western Cape</option>
+                            <option value="eastern cape">Eastern Cape</option>
+                            <option value="free state">Free State</option>
+                            <option value="mpumalanga">Mpumalanga</option>
+                            <option value="limpopo">Limpopo</option>
+                            <option value="gauteng">Gauteng</option>
+                            <option value="kwa-zulu natal">Kwa-Zulu Natal</option>
+                        </select>
+                        <br />
+                        <label for="CellNumber">Cell Number</label>
+                        <br />
+                        <input type="phone" id="CellNumber" name="cellnumber" placeholder="Your cellphone number ...">
+                        <br />
+                        <label for="EmailAddress">Email Address</label>
+                        <br />
+                        <input type="email" id="EmailAddress" name="emailaddress" placeholder="Your email address ...">
+                        <br />
+                        <label for="Message">Message</label>
+                        <br />
+                        <input type="text" id="Message" name="message" style ="height: 200px; padding: 12px 20px;" placeholder="Please type your message here...">
+                        <br />
+                        <input type="submit" value="Submit">
+                    </form>
+
                 </td>
             </tr>
         </table>
     </div>
 </body>
 
-<footer style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
-    <div style="background-color:lightseagreen;">
+<footer>
+    <div  class="HeaderFooter">
     <!--The footer of the website-->
-        <table style="width:100%;padding-left: 2%;padding-right: 2%;padding-top: 2%;padding-bottom: 2%;">
+        <table id="FooterTable">
             <tr>
                 <td style="text-align: left; column-width: 30%;">
                     <address>
