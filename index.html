@@ -6,6 +6,7 @@
 
 <head>
     <link rel="stylesheet" href="../Jocelyn Atwell CodeTribe Bootcamp 2023/style.css">
+    <script src="../Jocelyn Atwell CodeTribe Bootcamp 2023/index.js"></script>
 </head>
 
 <header>
@@ -27,7 +28,7 @@
                     <a href="#">Home</a>
                     </nav>
                 <!--The About Me navigation tab-->
-                <td class="HeaderNav"  class="active">
+                <td class="HeaderNav" class="active">
                     <nav>
                     <a href="../Jocelyn Atwell CodeTribe Bootcamp 2023/About Me.html">About Me</a>
                     </nav>
@@ -56,43 +57,40 @@
 
         <table id="BodyTable">
             <tr>
-                <td class="BodyHeading"><h2>Jocelyn Atwell</h2></td>
+                <td class="BodyHeading"><h2 id="myself"></h2></td>
                 <!--My image for my biography-->
                 <td rowspan="2" class= "HomeBodyHeading";style=padding-left: 5%;><img src="../Jocelyn Atwell CodeTribe Bootcamp 2023/Assets/Images/Joc-1024x1536.jpg" class="RightImgBody"></td>
             </tr>
             <tr>
                 <td class="LeftBodyTd">
-                    <p>My name is Jocelyn Atwell. I am 23 years old. I was born and raised in the small town of Roodepan situated on the outskirts of Kimberley.</p>
-                    <p>I graduated with my NSC in 2017 with a Bachelors Pass which included a distinction in Computer Applications Technology,
-                        Afrikaans First Additional Language and Visual Arts. Thereafter I completed my studies at Sol Plaaitje University where I graduated with
-                        a degree in Bsc Data Science in 2021.
+                    <p id="homepagepara1"></p><br />
+                    <p id="homepagepara2"></p>
                     <br />
-                    <br />
-                        My qualities are that I am always eager to learn, improve on my skills as well as to execute any task to the best of my ability.
-                        I am purpose driven and work well individually as well as in a group. Attributes that I could use to describe me are that I am a:
-                        <ul>
-                            <li>Creative Thinker</li>
-                            <li>Service Oriented</li>
-                            <li>Teachable</li>
-                            <li>Learning and,</li>
-                            <li>Hard Worder</li>
-                        </ul>
-                        My key skills are:
-                        <ul>
-                            <li>Programming</li>
-                            <li>Communication</li>
-                            <li>Decision-Making</li>
-                            <li>Problem Solving and,</li>
-                            <li>Client Service</li>
-                        </ul>
+                    <p id="homepagepara3"></p>
+                    <p id="Attributes">
+                    <!--<ul>
+                        <li>Creative Thinker</li>
+                        <li>Service Oriented</li>
+                        <li>Teachable</li>
+                        <li>Learning and,</li>
+                        <li>Hard Worder</li>
+                    </ul>-->
+                    </p>
+                    <p id="homepagepara4"></p>
+                    <p id="MyKeySkills">
+                    <!--<ul>
+                        <li>Programming</li>
+                        <li>Communication</li>
+                        <li>Decision-Making</li>
+                        <li>Problem Solving and,</li>
+                        <li>Client Service</li>
+                    </ul>-->
                     </p>
                 </td>
             </tr>
         </table>
     </div>
 </body>
-
-
 
 <footer>
     <div class="HeaderFooter">
@@ -101,15 +99,9 @@
             <tr>
                 <td class="FooterTD">
                     <address>
-                        <p>
-                            36 Aasvoel Street <br />
-                            Pescodia <br />
-                            Kimberley <br />
-                            8309
-                            <br />
-                            <br />
-                            084 370 9469
+                        <p class="myaddress">
                         </p>
+                        <p class="mynumber"></p>
                     </address>
                 </td>
                     <!--The About Me navigation tab-->

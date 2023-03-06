@@ -154,6 +154,7 @@ body{
     background-color: black;
     word-spacing: 5px;
     padding-bottom: 5px;
+    object-position: top;
 }
 
 #ContactBodyLeftTD {
@@ -163,6 +164,7 @@ body{
     padding-bottom: 20px;
     background-color: black;
     word-spacing: 5px;
+    object-position: top;
 }
 
 #ContactBodyRightTD {
@@ -183,7 +185,7 @@ input[type=text], select {
     box-sizing: border-box;
 }
 
-input[type=phone], select {
+input[type=tel], select {
     width:50%;
     padding:12px 20px;
     margin:8px 0;
@@ -222,4 +224,359 @@ input[type=submit]:hover {
     background-color:rgb(13, 43, 43);
     text-align: center;
     padding-top: 5%;
+}
+
+#skillsTable {
+    padding: 5% 5% 5% 5%;
+    width: 100%;
+    text-align: center;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+.skillTypeTD {
+    width: 25%;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+.skillLevelTD {
+    width: 25%;
+    border-style: solid;
+    border-color: #ccc;
+}
+
+h6{
+    font-weight: bold;
+    font-size: small;
+}
+
+.skillIMG {
+    width: 50px;
+    height: 100%;
+    padding: 5% 5% 5% 5%;
+    text-align: center;
+    border-color: aliceblue;
+}
+
+.skillLevel {
+    font-weight: bold;
+    text-align: center;
+    font-size:medium;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+  }
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    font-size: small ;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+.Attributes {
+    visibility: visible;
+    display: contents;
+}
+
+.MyKeySkills {
+    visibility: visible;
+    display: contents;
+}
+
+.MyHobbies {
+    visibility: visible;
+    display: contents;
+}
+
+#colourdetectionproject {
+    visibility: visible;
+    font-weight: bold;
+    color: #ccc;
+}
+
+#drowsinessdetectionproject {
+    visibility: visible;
+    font-weight: bold;
+    color: #ccc;
+}
+
+#inventorysimulationproject {
+    visibility: visible;
+    font-weight: bold;
+    color: #ccc;
+}
+
+#myself {
+    font-weight: bolder;
+    font-size: large;
+}
+
+#homepagepara1 {
+    font-weight: normal;
+    font-size: medium;
+}
+
+#homepagepara2 {
+    font-weight: normal;
+    font-size: medium;
+}
+
+#homepagepara3 {
+    font-weight: normal;
+    font-size: medium;
+}
+
+#homepagepara4 {
+    font-weight: normal;
+    font-size: medium;
+}
+
+.myaddress {
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+}
+
+.mynumber {
+    font-size: medium;
+    font-weight: bold;
+    color: black;
+}
+
+#contactusheading {
+    font-weight: bolder;
+    font-size: large;
+}
+
+#mycontactinfoheading {
+    font-weight: bolder;
+    font-size: large;
+}
+
+#myemailaddress {
+    font-weight: normal;
+    font-size: medium;
+}
+
+#contactperson {
+    font-weight: normal;
+    font-size: medium;
+}
+
+#contactnumber {
+    font-weight: normal;
+    font-size: medium;
+}
+
+#emailaddress {
+    font-weight: normal;
+    font-size: medium;
+}
+#physicaladdress {
+    font-weight: normal;
+    font-size: medium;
+}
+
+#formpara1 {
+    font-weight: normal;
+    font-size: medium;
+}
+
+#formpara2 {
+    font-weight: normal;
+    font-size: medium;
+}
+
+#aboutpagemainheading {
+    font-weight: bolder;
+    font-size: large;
+}
+
+#backgroundheading {
+    font-weight: bolder;
+    font-size: large;
+}
+
+#backgroundpara1 {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#educationheading {
+    font-weight: bolder;
+    font-size: large;
+}
+
+#highschoolheading {
+    font-weight: bolder;
+    font-size: large;
+}
+
+#highschoolpara {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#varsityheading {
+    font-weight: bolder;
+    font-size: large;
+}
+
+#varsitypara {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#glicamheading {
+    font-weight: bolder;
+    font-size: large;
+}
+
+#glicampara {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#awardsheading {
+    font-weight: bolder;
+    font-size: large;
+}
+
+#awardspara {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#MyAwards {
+    visibility: visible;
+    display: contents;
+}
+
+#capptionheading {
+    font-weight: bolder;
+    font-size: large;
+}
+
+#capptionpara {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#skillsheading{
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#typeheading {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#skilllevelheading {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#projectsheading {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#projectpara {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#projectslist {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#referencesheading {
+    font-weight: bolder;
+    font-size: large;
+}
+
+#highschoolname {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#principal {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#principalnumber {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#capptiondirectorlabel {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#capptiondirector {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#capptionnumber {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#relativelabel {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#relative {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
+}
+
+#relativenumber {
+    font-weight: normal;
+    font-size: medium;
+    color: #ccc;
 }

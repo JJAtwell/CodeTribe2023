@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <title>
-    Jocelyn Atwell
+    Contact Us
 </title>    
 
 <head>
     <link rel="stylesheet" href="../Jocelyn Atwell CodeTribe Bootcamp 2023/style.css">
+    <script src= "../Jocelyn Atwell CodeTribe Bootcamp 2023/index.js"></script>
 </head>
 
 <header>
@@ -49,42 +50,35 @@
     <div>
         <table id="BodyTable">
             <tr>
-                <td colspan = "2"><h2>Contact Us</h2></td>
+                <td colspan="2"><h2 id="contactusheading"></h2></td>
                 <!--Contact Information-->
             </tr>
             <tr>
                 <td id="ContactBodyLeftTD">
-                    <p>Contact Information of Jocelyn Atwell:</p>
+                    <p id="mycontactinfoheading"></p><p id="myself"></p>
                     <br />
                     <p>
-                        <b>Contact Person:</b> Jocelyn Atwell
+                        <p id="contactperson"><b></b></p><p id="myself" style="font-size: medium;"></p>
                         <br />
+                        <p id="contactnumber"><b></b></p><p class="mynumber"></p>
                         <br />
-                        <b>Contact Number:</b> +27 (0)84 370 9469
+                        <p id="emailaddress"><b></b></p><p id="myemailaddress"></p>
                         <br />
-                        <br />
-                        <b>Email Address:</b> jjatwell99@gmail.com
-                        <br />
-                        <br />
-                        <b>Physical Address:</b> 36 Aasvoel Street
-                        <br /><p style = "text-indent: 22vh;">Pescodia</p>
-                        <p style = "text-indent: 22vh;">Kimberley</p>
-                        <p style = "text-indent: 22vh;">Northern Cape</p>
-                        <p style = "text-indent: 22vh;">8309</p>
+                        <p id="physicaladdress"><b></b></p><p class="myaddress"></p>
                     </p>
                 </td>
                 <td id="ContactBodyRightTD">
-                    <h4>Kindly leave your contact information below:</h4>
-                    <p><i>Rest assured we will respond as soon as we can.</i></p>
+                    <h4 id= "formpara1"></h4>
+                    <p id="formpara2"><i></i></p>
 
-                    <form action = "/action_page.php" id="formstyling">
+                    <form onsubmit="return validateForm()" action="https://formspree.io/f/xgebydkw" method="post" id="formstyling">
                         <label for="FirstName">First Name</label>
                         <br />
-                        <input type="text" id="FirstName" name="firstname" placeholder="Your name...">
+                        <input type="text" id="FirstName" name="firstname" placeholder="Your name..." pattern="[A-Za-z]+" required>
                         <br />
                         <label for="LastName">Last Name</label>
                         <br />
-                        <input type="text" id="LastName" name="lastname" placeholder="Your last name...">
+                        <input type="text" id="LastName" name="lastname" placeholder="Your last name..." pattern="[A-Za-z]+" required>
                         <br />
                         <label for="Province">Province</label>
                         <br />
@@ -102,7 +96,7 @@
                         <br />
                         <label for="CellNumber">Cell Number</label>
                         <br />
-                        <input type="phone" id="CellNumber" name="cellnumber" placeholder="Your cellphone number ...">
+                        <input type="tel" id="CellNumber" name="cellnumber" placeholder="Your cellphone number ...">
                         <br />
                         <label for="EmailAddress">Email Address</label>
                         <br />
@@ -114,7 +108,6 @@
                         <br />
                         <input type="submit" value="Submit">
                     </form>
-
                 </td>
             </tr>
         </table>
@@ -128,15 +121,8 @@
             <tr>
                 <td style="text-align: left; column-width: 30%;">
                     <address>
-                        <p>
-                            36 Aasvoel Street <br />
-                            Pescodia <br />
-                            Kimberley <br />
-                            8309
-                            <br />
-                            <br />
-                            084 370 9469
-                        </p>
+                        <p class="myaddress"></p>
+                        <p class="mynumber"></p>
                     </address>
                 </td>
                     <!--The About Me navigation tab-->
