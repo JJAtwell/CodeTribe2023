@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/ -->
+<html lang="en-US" prefix="og: https://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" async="" src="./ColorSeg&amp;Thresh_files/analytics.js.download"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-215683521-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-215683521-1');
+</script>
+
+    
+<!-- Search Engine Optimization by Rank Math - https://s.rankmath.com/home -->
+<title>MATLAB Color Segmentation and Color Threshing | FYP Solutions</title>
+<meta name="description" content="Color segmentation in matlab is used to detect color objects from some Image or video frame. We are doing color segmentation in RGB domain.">
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+<link rel="canonical" href="https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MATLAB Color Segmentation and Color Threshing | FYP Solutions">
+<meta property="og:description" content="Color segmentation in matlab is used to detect color objects from some Image or video frame. We are doing color segmentation in RGB domain.">
+<meta property="og:url" content="https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/">
+<meta property="og:site_name" content="FYP Solutions">
+<meta property="article:publisher" content="https://www.facebook.com/abdul.rehman.2050">
+<meta property="article:tag" content="color filter">
+<meta property="article:tag" content="matlab image processing">
+<meta property="article:section" content="Image Processing">
+<meta property="og:updated_time" content="2020-04-05T15:59:53+05:00">
+<meta property="og:image" content="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png">
+<meta property="og:image:secure_url" content="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png">
+<meta property="og:image:width" content="574">
+<meta property="og:image:height" content="512">
+<meta property="og:image:alt" content="Red and Green color filter">
+<meta property="og:image:type" content="image/png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MATLAB Color Segmentation and Color Threshing | FYP Solutions">
+<meta name="twitter:description" content="Color segmentation in matlab is used to detect color objects from some Image or video frame. We are doing color segmentation in RGB domain.">
+<meta name="twitter:site" content="@AR_2050">
+<meta name="twitter:creator" content="@AR_2050">
+<meta name="twitter:image" content="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png">
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://www.fypsolutions.com/#person","name":"Strange Lab"},{"@type":"WebSite","@id":"https://www.fypsolutions.com/#website","url":"https://www.fypsolutions.com","name":"Strange Lab","publisher":{"@id":"https://www.fypsolutions.com/#person"},"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png?fit=574%2C512&amp;ssl=1","url":"https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png?fit=574%2C512&amp;ssl=1","width":"574","height":"512","caption":"Red and Green color filter","inLanguage":"en-US"},{"@type":"Person","@id":"https://www.fypsolutions.com/author/supermind/","name":"Abdul Rehman","url":"https://www.fypsolutions.com/author/supermind/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/95cb2da65c949f4b312047efcca9b28e?s=96&amp;d=identicon&amp;r=g","url":"https://secure.gravatar.com/avatar/95cb2da65c949f4b312047efcca9b28e?s=96&amp;d=identicon&amp;r=g","caption":"Abdul Rehman","inLanguage":"en-US"}},{"@type":"WebPage","@id":"https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/#webpage","url":"https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/","name":"MATLAB Color Segmentation and Color Threshing | FYP Solutions","datePublished":"2020-04-05T15:57:37+05:00","dateModified":"2020-04-05T15:59:53+05:00","author":{"@id":"https://www.fypsolutions.com/author/supermind/"},"isPartOf":{"@id":"https://www.fypsolutions.com/#website"},"primaryImageOfPage":{"@id":"https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png?fit=574%2C512&amp;ssl=1"},"inLanguage":"en-US"},{"@type":"BlogPosting","headline":"MATLAB Color Segmentation and Color Threshing | FYP Solutions","keywords":"color segmentation","datePublished":"2020-04-05T15:57:37+05:00","dateModified":"2020-04-05T15:59:53+05:00","author":{"@id":"https://www.fypsolutions.com/author/supermind/"},"publisher":{"@id":"https://www.fypsolutions.com/#person"},"description":"Color segmentation in matlab is used to detect color objects from some Image or video frame. We are doing color segmentation in RGB domain.","name":"MATLAB Color Segmentation and Color Threshing | FYP Solutions","@id":"https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/#richSnippet","isPartOf":{"@id":"https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/#webpage"},"image":{"@id":"https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png?fit=574%2C512&amp;ssl=1"},"inLanguage":"en-US","mainEntityOfPage":{"@id":"https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel="dns-prefetch" href="https://secure.gravatar.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="dns-prefetch" href="https://v0.wordpress.com/">
+<link rel="dns-prefetch" href="https://widgets.wp.com/">
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://0.gravatar.com/">
+<link rel="dns-prefetch" href="https://1.gravatar.com/">
+<link rel="dns-prefetch" href="https://2.gravatar.com/">
+<link rel="dns-prefetch" href="https://i0.wp.com/">
+<link rel="dns-prefetch" href="https://i1.wp.com/">
+<link rel="dns-prefetch" href="https://i2.wp.com/">
+<link rel="dns-prefetch" href="https://c0.wp.com/">
+<link rel="alternate" type="application/rss+xml" title="FYP Solutions » Feed" href="https://www.fypsolutions.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="FYP Solutions » Comments Feed" href="https://www.fypsolutions.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="FYP Solutions » MATLAB Color Segmentation and Color Threshing Comments Feed" href="https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/feed/">
+<link rel="alternate" type="application/rss+xml" title="FYP Solutions » Stories Feed" href="https://www.fypsolutions.com/web-stories/feed/">		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.fypsolutions.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.6"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./ColorSeg&amp;Thresh_files/wp-emoji-release.min.js.download" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./ColorSeg&amp;Thresh_files/style.min.css" type="text/css" media="all">
+<style id="wp-block-library-inline-css" type="text/css">
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel="stylesheet" id="mediaelement-css" href="./ColorSeg&amp;Thresh_files/mediaelementplayer-legacy.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="./ColorSeg&amp;Thresh_files/wp-mediaelement.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="WP-BibTeX-css" href="./ColorSeg&amp;Thresh_files/wp-bibtex.css" type="text/css" media="all">
+<link rel="stylesheet" id="codemirror-blocks--css" href="./ColorSeg&amp;Thresh_files/blocks.style.build.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="impressive-business-google-fonts-api-css" href="./ColorSeg&amp;Thresh_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="./ColorSeg&amp;Thresh_files/bootstrap.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-css" href="./ColorSeg&amp;Thresh_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="./ColorSeg&amp;Thresh_files/font-awesome.css" type="text/css" media="all">
+<link rel="stylesheet" id="impressive-business-default-css-css" href="./ColorSeg&amp;Thresh_files/default.css" type="text/css" media="all">
+<link rel="stylesheet" id="impressive-business-style-css" href="./ColorSeg&amp;Thresh_files/style.css" type="text/css" media="all">
+<style id="impressive-business-style-inline-css" type="text/css">
+#banner-inner,#error-section{background-image:url(https://www.fypsolutions.com/wp-content/themes/impressive-business/assets/images/ban1.jpeg);}*::selection{background: #1cbac8;}
+       .blog-list-type li .date,.about-us-blog-sidebar h4:before,.subscribe-btn .btn:hover,.our-work-heding-text h1:after,.about-us-blog-sidebar #today,.nav-links ul li span.current,.nav-links ul li a:hover
+       ,.main-nav.fixed-header.fixed, #mainmenu ul > li > a:before, #footer-section .calendar_wrap table#wp-calendar tbody td#today, .input-group-btn > .btn:hover{ background-color:#1cbac8;}
+       #mainmenu ul ul li:hover > a, #mainmenu ul ul li a:hover, .footer-copy-text a:hover, #footer-section .media-body a:hover, .about-us-blog-sidebar td a, .about-us-blog-sidebar tfoot td a:hover, #footer-section .our-work-heding-text tfoot td a:hover, #footer-section .calendar_wrap table#wp-calendar tbody td a, .breadcrumbs a:hover { color:#1cbac8;}
+       .navbar-form .form-control,.input-group-btn .btn,.subscribe-btn .btn,.tagcloud a:hover,.footer-icon li a:hover,.comment-body,.comment-form textarea, .comment-form input,.comment-form .form-submit input,.about-us-blog-sidebar td, .about-us-blog-sidebar th,.about-us-blog select,.nav-links ul li span.current,.nav-links ul li a:hover, #footer-section select#archives-dropdown--1, #footer-section select#categories-dropdown--1, #footer-section .our-work-heding-text form select, #footer-section .calendar_wrap table#wp-calendar thead th, #footer-section .calendar_wrap table#wp-calendar tbody td, #footer-section .calendar_wrap table#wp-calendar tfoot td
+       { border-color: #1cbac8; }
+       .blog-text-heding p span,.tagcloud a:hover,.footer-icon li a:hover,.our-work-heding-text li a:hover,.post-cat-list a:hover,.blog-text-heding h1 a:hover,.media-body a:hover,.breadcrumbs .item-current,.blog-pager-section .nav-links a:hover,.reply a:hover{ color:#1cbac8;}
+             #footer-section { background-color: #383838}
+       .main-logo a img {  max-height: 45px;}
+</style>
+<link rel="stylesheet" id="social-logos-css" href="./ColorSeg&amp;Thresh_files/social-logos.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="./ColorSeg&amp;Thresh_files/jetpack.css" type="text/css" media="all">
+<script type="text/javascript" id="jetpack_related-posts-js-extra">
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./ColorSeg&amp;Thresh_files/related-posts.min.js.download" id="jetpack_related-posts-js"></script>
+<script type="text/javascript" src="./ColorSeg&amp;Thresh_files/jquery.min.js.download" id="jquery-core-js"></script>
+<script type="text/javascript" src="./ColorSeg&amp;Thresh_files/jquery-migrate.min.js.download" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="./ColorSeg&amp;Thresh_files/bootstrap.js.download" id="bootstrap-js"></script>
+<script type="text/javascript" src="./ColorSeg&amp;Thresh_files/owl.carousel.js.download" id="owl-carousel-js"></script>
+<link rel="https://api.w.org/" href="https://www.fypsolutions.com/wp-json/"><link rel="alternate" type="application/json" href="https://www.fypsolutions.com/wp-json/wp/v2/posts/499"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.fypsolutions.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.fypsolutions.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.8.6">
+<link rel="shortlink" href="https://wp.me/p9zSUF-83">
+<link rel="alternate" type="application/json+oembed" href="https://www.fypsolutions.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.fypsolutions.com%2Fimage-processing%2Fmatlab-color-segmentation-and-color-threshing%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.fypsolutions.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.fypsolutions.com%2Fimage-processing%2Fmatlab-color-segmentation-and-color-threshing%2F&amp;format=xml">
+<style type="text/css">img#wpstats{display:none}</style>
+		<link rel="pingback" href="https://www.fypsolutions.com/xmlrpc.php">
+
+<link rel="stylesheet" href="./ColorSeg&amp;Thresh_files/wassup-widget.css" type="text/css"></head>
+<body data-rsssl="1" class="post-template-default single single-post postid-499 single-format-standard">
+    <header class="transparent">
+        <!-- Fixed navbar -->
+        <nav id="header" class="navbar main-nav fixed-header">
+            <div id="header-container" class="container header-wrap navbar-container">
+                <div class="navbar-header-logo main-logo"> 
+                                                            <a href="https://www.fypsolutions.com/" rel="home" id="brand" class="custom-logo-link"><span class="site-title"><h4>FYP Solutions</h4><small class="site-description">One stop solution for your tech projects</small></span></a>   
+                                    </div>
+                <div id="mainmenu" classold="=&quot;collapse" navbar-collapse"=""><div id="menu-button" class="fa fa-bars" aria-hidden="true"></div>
+                    <ul id="menu-menu-1" class="navbar-nav"><li id="menu-item-238" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-238"><a href="https://www.fypsolutions.com/">Home</a></li>
+<li id="menu-item-240" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-240"><a href="https://www.fypsolutions.com/contact-info/">Contact Info</a></li>
+<li id="menu-item-242" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-242"><a href="https://www.fypsolutions.com/portfolio/">Projects</a></li>
+<li id="menu-item-241" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-241"><a href="https://www.fypsolutions.com/members/">Members</a></li>
+</ul>                </div><!-- /.nav-collapse -->
+            
+            </div><!-- /.container -->
+        </nav><!-- /.navbar -->
+    </header><section id="banner-inner">
+    <div class="container">
+        <div class="our-work-heding-text banner-inner-tetx">
+            <h1>MATLAB Color Segmentation and Color Threshing</h1>
+        </div>
+        <ul id="breadcrumbs" class="breadcrumbs"><li class="item-home"><a class="bread-link bread-home" href="https://www.fypsolutions.com/" title="Home">Home</a></li><li class="separator separator-home"> / </li><li class="item-cat"><a href="https://www.fypsolutions.com/category/matlab/">MATLAB</a></li><li class="separator"> / </li><li class="item-current item-499"><strong class="bread-current bread-499" title="MATLAB Color Segmentation and Color Threshing">MATLAB Color Segmentation and Color Threshing</strong></li></ul>    </div>
+</section>
+<section id="banner-section" class="post-499 post type-post status-publish format-standard has-post-thumbnail hentry category-image-processing category-examples category-matlab tag-color-filter tag-matlab-image-processing">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12">
+                            <div class="blog-post">
+                                        <div class="blog-post-img">    
+                        <img width="574" height="512" src="./ColorSeg&amp;Thresh_files/red_and_green.png" class="img-responsive wp-post-image" alt="Red and Green color filter" loading="lazy" srcset="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png?w=574&amp;ssl=1 574w, https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png?resize=300%2C268&amp;ssl=1 300w" sizes="(max-width: 574px) 100vw, 574px" data-attachment-id="514" data-permalink="https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/attachment/red_and_green/" data-orig-file="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png?fit=574%2C512&amp;ssl=1" data-orig-size="574,512" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="red_and_green" data-image-description="&lt;p&gt;Red and Green Color Segmentation&lt;/p&gt;
+" data-image-caption="&lt;p&gt;Red and Green color segmentation&lt;/p&gt;
+" data-medium-file="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png?fit=300%2C268&amp;ssl=1" data-large-file="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png?fit=574%2C512&amp;ssl=1">                    </div>
+                                        <div class="blog-text-heding">
+                        <h1><a href="https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/">MATLAB Color Segmentation and Color Threshing</a></h1>                        
+                        <p>By <span>Abdul Rehman</span></p>
+                    </div>
+                    <div class="blog-list">
+                        <ul class="blog-list-type">
+                                                        <li><i class="fa fa-bookmark-o"></i>Image Processing , Examples , MATLAB ,  </li>
+                            <li>Tags: <a href="https://www.fypsolutions.com/tag/color-filter/" rel="tag">color filter</a>, <a href="https://www.fypsolutions.com/tag/matlab-image-processing/" rel="tag">matlab image processing</a></li>                            <li><span class="date">05 Apr</span></li>
+                        </ul>
+                        
+<p>Color Segmentation is very basic problem in digital image processing. Most of the time we need to segment Object based on their colors. So Color segmentation comes in handy in such scenarios. Today, we are going to explain how to segment RGB Image based on some basic Primary Colors. This technique could also be applied to segment colors other than primary colors. So We will also see that Yellow and Orange Colors are also segmented while applying threshold for RED Colors. </p>
+
+
+
+<h2>Read Image In MATLAB</h2>
+
+
+
+<p>First of all lets take a sample image on which we are going to apply all our color segmentation algorithm. This Image comes with MATLAB Image Processing Toolbox. So You can just type this command in command window in MATLAB. </p><div class="code-block code-block-1" style="margin: 8px 0; clear: both;">
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-1311964513098804" data-ad-slot="8220164709"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-1" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><link rel="stylesheet" id="syntax-highlighting-code-block-css" href="./ColorSeg&amp;Thresh_files/default(1).css" type="text/css" media="all"><style>.wp-block-code {
+	border: 0;
+	padding: 0;
+}
+
+.wp-block-code > div {
+	overflow: auto;
+}
+
+.shcb-language {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal;
+	word-break: normal;
+}
+
+.hljs {
+	box-sizing: border-box;
+}
+
+.hljs.shcb-code-table {
+	display: table;
+	width: 100%;
+}
+
+.hljs.shcb-code-table > .shcb-loc {
+	color: inherit;
+	display: table-row;
+	width: 100%;
+}
+
+.hljs.shcb-code-table .shcb-loc > span {
+	display: table-cell;
+}
+
+.wp-block-code code.hljs:not(.shcb-wrap-lines) {
+	white-space: pre;
+}
+
+.wp-block-code code.hljs.shcb-wrap-lines {
+	white-space: pre-wrap;
+}
+
+.hljs.shcb-line-numbers {
+	border-spacing: 0;
+	counter-reset: line;
+}
+
+.hljs.shcb-line-numbers > .shcb-loc {
+	counter-increment: line;
+}
+
+.hljs.shcb-line-numbers .shcb-loc > span {
+	padding-left: 0.75em;
+}
+
+.hljs.shcb-line-numbers .shcb-loc::before {
+	border-right: 1px solid #ddd;
+	content: counter(line);
+	display: table-cell;
+	padding: 0 0.75em;
+	text-align: right;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+	width: 1%;
+}
+</style><div><code class="hljs language-javascript">&gt;&gt;x=imread(<span class="hljs-string">'peppers.png'</span>);
+&gt;&gt;figure,imshow(x);</code></div><small class="shcb-language" id="shcb-language-1"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<h2>Convert Image to Gray-scale and Get Red Matrix </h2>
+
+
+
+<p>Now we have our image which is in RGB Color Space. We can extract Red Matrix and Convert RGB Image into grayscale Image. </p>
+
+
+<pre class="wp-block-code"><div><code class="hljs">&gt;&gt;gray_x = rgb2gray(x);
+&gt;&gt;red_x = x(:,:,1);</code></div></pre>
+
+
+<div class="wp-block-image"><div class="code-block code-block-2" style="margin: 8px 0; clear: both;">
+<script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="fluid" data-ad-layout-key="-88+er-i-p+3f" data-ad-client="ca-pub-1311964513098804" data-ad-slot="2939917866"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<figure class="aligncenter size-large"><a href="https://i2.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/peppers_original-1.png"><img data-attachment-id="509" data-permalink="https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/attachment/peppers_original-1/" data-orig-file="https://i2.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/peppers_original-1.png?fit=700%2C571&amp;ssl=1" data-orig-size="700,571" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="peppers_original-1" data-image-description="" data-image-caption="" data-medium-file="https://i2.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/peppers_original-1.png?fit=300%2C245&amp;ssl=1" data-large-file="https://i2.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/peppers_original-1.png?fit=640%2C522&amp;ssl=1" loading="lazy" width="640" height="522" src="./ColorSeg&amp;Thresh_files/peppers_original-1.png" alt="Original Peppers Image" class="wp-image-509" srcset="https://i2.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/peppers_original-1.png?w=700&amp;ssl=1 700w, https://i2.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/peppers_original-1.png?resize=300%2C245&amp;ssl=1 300w" sizes="(max-width: 640px) 100vw, 640px"></a><figcaption>Original RGB Image</figcaption></figure></div>
+
+
+
+<h2>Subtract Image </h2>
+
+
+
+<p>Now if we subtract this gray scale Image from Red matrix then we will get the correct light shadings and only red objects. Also note that here we will also get red color objects which are mixture of other colors as well. Like Yellow and Orange Color who have Green color mixed with Red Color. Because these colors contain 255 value of RED and some portion of Green in them. Because of High Red portion we will not able to directly eliminate these objects. We will see how to eliminate these colors at end of this tutorial. For now just get a subtracted image like this </p>
+
+
+<pre class="wp-block-code"><div><code class="hljs">&gt;&gt;sub_x = imsubtract(red_x,gray_x);
+&gt;&gt;figure,imshow(sub_x);</code></div></pre>
+
+
+<div class="wp-block-image"><figure class="aligncenter size-full"><a href="https://i2.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_subtracted.png"><img data-attachment-id="507" data-permalink="https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/attachment/red_subtracted/" data-orig-file="https://i2.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_subtracted.png?fit=700%2C571&amp;ssl=1" data-orig-size="700,571" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="red_subtracted" data-image-description="" data-image-caption="" data-medium-file="https://i2.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_subtracted.png?fit=300%2C245&amp;ssl=1" data-large-file="https://i2.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_subtracted.png?fit=640%2C522&amp;ssl=1" loading="lazy" width="640" height="522" src="./ColorSeg&amp;Thresh_files/red_subtracted.png" alt="After subtracting Grayscale image from Red Matrix of original RGB Image. " class="wp-image-507" title="peppers red object detection" srcset="https://i2.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_subtracted.png?w=700&amp;ssl=1 700w, https://i2.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_subtracted.png?resize=300%2C245&amp;ssl=1 300w" sizes="(max-width: 640px) 100vw, 640px"></a><figcaption>After Subtracting Gray-scale from Red Matrix</figcaption></figure></div>
+
+
+
+<h2>Convert to binary and Mask RED Objects</h2>
+
+
+
+<p>Now we need to convert this image into binary image with specified threshold value and After that threshing we need to create a mask and finally convert that mask into 3 dimensions so that we would be able to apply that mask onto our RGB Image. Which is also a 3 dimensional Image, so we need a 3 dimensional mask to apply on. Finally We will remove all other pixels than the mask[2] and get the result as follows. </p>
+
+
+<pre class="wp-block-code"><div><code class="hljs">&gt;&gt;bin_x  = im2bw(sub_x,0.21);
+&gt;&gt;mask  = ~bin_x;
+&gt;&gt;mask3 = cat(3,mask,mask,mask) 
+&gt;&gt;new_x = x;   %create a backup copy of original image
+&gt;&gt; new_x(mask3) = 0;
+&gt;&gt;figure,imshow(new_x);</code></div></pre>
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="503" data-permalink="https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/attachment/red_mask_0-2_1/" data-orig-file="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_mask_0.2_1.png?fit=694%2C570&amp;ssl=1" data-orig-size="694,570" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Red Mask Applied with threhold of 0.21 in binary" data-image-description="&lt;p&gt;This is result Image after applying color segmentation on RED Objects and Yellow as well as Orange Colors are also segmented.&lt;/p&gt;
+" data-image-caption="&lt;p&gt;Red color segmentation with yellow and Orange &lt;/p&gt;
+" data-medium-file="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_mask_0.2_1.png?fit=300%2C246&amp;ssl=1" data-large-file="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_mask_0.2_1.png?fit=640%2C526&amp;ssl=1" loading="lazy" width="640" height="526" src="./ColorSeg&amp;Thresh_files/red_mask_0.2_1.png" alt="Red Objects including Yellow and Orange" class="wp-image-503" srcset="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_mask_0.2_1.png?w=694&amp;ssl=1 694w, https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_mask_0.2_1.png?resize=300%2C246&amp;ssl=1 300w" sizes="(max-width: 640px) 100vw, 640px" data-recalc-dims="1"><figcaption>Red color segmentation with yellow and Orange </figcaption></figure>
+
+
+
+<p>Here you can see how Yellow and Orange Peppers are also displayed along with Red one which were our desired peppers. But Now we are getting wrong objects detected as our desired objects. </p>
+
+
+
+<h2>RED and Green Color Segmentation</h2>
+
+
+
+<p>Now we are going to filter out RED color along with Green Color. The reason to choose Green color rather than blue is because of our unwanted Yellow and Orange Objects which holds Green in them. So We are actually building a foundation toward Eliminating those unwanted color objects. So here is the code to combine two colors and detected more than one color in a Image or Video frame. </p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-2" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><div><code class="hljs language-javascript">&gt;&gt;green_x = x(:,:,<span class="hljs-number">2</span>);  %<span class="hljs-keyword">get</span> green matrix just like the red one
+&gt;&gt;gsub_x = imsubtract(green_x,gray_x); %subtract gray from green 
+&gt;&gt;figure,imshow(gsub_x);</code></div><small class="shcb-language" id="shcb-language-2"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>Now if you notice that the image now contain very less information. Because of very low portion of green in it. So we need to reduce the threshold value for detecting green color in this Image. So just apply this value and see the results now. </p>
+
+
+<pre class="wp-block-code"><div><code class="hljs">&gt;&gt;gbin_x = im2bw(gsub_x,0.01);
+&gt;&gt;figure,imshow(gbin_x);</code></div></pre>
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><img data-attachment-id="512" data-permalink="https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/attachment/green_0-1/" data-orig-file="https://i2.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/green_0.1.png?fit=700%2C571&amp;ssl=1" data-orig-size="700,571" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="green_0.1" data-image-description="" data-image-caption="" data-medium-file="https://i2.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/green_0.1.png?fit=300%2C245&amp;ssl=1" data-large-file="https://i2.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/green_0.1.png?fit=640%2C522&amp;ssl=1" loading="lazy" width="640" height="522" src="./ColorSeg&amp;Thresh_files/green_0.1.png" alt="Green Peppers after green color segmentation " class="wp-image-512" srcset="https://i2.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/green_0.1.png?w=700&amp;ssl=1 700w, https://i2.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/green_0.1.png?resize=300%2C245&amp;ssl=1 300w" sizes="(max-width: 640px) 100vw, 640px" data-recalc-dims="1"><figcaption>Green Peppers with Green color filtration</figcaption></figure></div>
+
+
+
+<h3>Combine Red binary and Green binary with subtraction</h3>
+
+
+
+<p>Now It may seem confusing that although we are subtracting images but the resultant effect would be a combination of two colors. This is just because the resultant image will be a 1 if one color is present in one image but not in other. But if both of the Images contains 1 then the resultant image will get 0 at their. </p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-3" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><div><code class="hljs language-javascript">
+%% Read Original Image
+
+x=imread(<span class="hljs-string">'peppers.png'</span>);
+gray_x = rgb2gray(x);
+%% Extract Red Space 
+red_x = x(:,:,<span class="hljs-number">1</span>);
+rsub_x = imsubtract(red_x,gray_x);
+
+%% Red to binary
+rbin_x = im2bw(rsub_x,<span class="hljs-number">0.3</span>);
+rbmask = im2bw(imcomplement(rbin_x));
+rbmask = cat(<span class="hljs-number">3</span>,rbmask,rbmask,rbmask);
+only_red_x = x;
+only_red_x(rbmask)=<span class="hljs-number">0</span>;
+figure,subplot(<span class="hljs-number">2</span>,<span class="hljs-number">1</span>,<span class="hljs-number">1</span>),imshow(x),title(<span class="hljs-string">'original Peppers Image'</span>);
+subplot(<span class="hljs-number">2</span>,<span class="hljs-number">1</span>,<span class="hljs-number">2</span>),imshow(only_red_x),title(<span class="hljs-string">'red objects found'</span>);
+
+%% display red_sub 
+figure,imshow(rsub_x);
+figure,imshow(x),title(<span class="hljs-string">'Original Peppers Image'</span>)
+%%
+
+green_x = x(:,:,<span class="hljs-number">2</span>); 
+gsub_x = imsubtract(green_x,gray_x);
+figure,imshow(gsub_x),title(<span class="hljs-string">'Green Matrix'</span>)
+gbin_x = im2bw(gsub_x,<span class="hljs-number">0.01</span>);
+figure,imshow(gbin_x),title(<span class="hljs-string">'green to binary with 0.01 threshold'</span>)
+
+%% mask only green objects
+
+only_green_x = x;
+ogx_mask = im2bw(double(imcomplement(gbin_x)));
+ogx_mask = cat(<span class="hljs-number">3</span>,ogx_mask,ogx_mask,ogx_mask);
+only_green_x(ogx_mask)=<span class="hljs-number">0</span>;
+figure,imshow(only_green_x),title(<span class="hljs-string">'Green Objects Subtracted'</span>);
+
+
+%% subtract together
+
+comb_x = x;
+abs_comb_x = x;
+combined_x = imsubtract(rbin_x,gbin_x);
+abs_cx = abs(imsubtract(rbin_x,gbin_x));
+
+%% apply masks
+mk1 = im2bw(imcomplement(combined_x));
+mk2 = im2bw(imcomplement(abs_cx));
+mk1 = cat(<span class="hljs-number">3</span>,mk1,mk1,mk1);mk2=cat(<span class="hljs-number">3</span>,mk2,mk2,mk2);
+comb_x(mk1)=<span class="hljs-number">0</span>;abs_comb_x(mk2)=<span class="hljs-number">0</span>;
+
+%% plotting
+figure,subplot(<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">1</span>),imshow(combined_x); title(<span class="hljs-string">'without abs'</span>)
+subplot(<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">2</span>),imshow(abs_cx),title(<span class="hljs-string">'with abs'</span>)
+subplot(<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>),imshow(comb_x),title(<span class="hljs-string">'without abs x'</span>)
+subplot(<span class="hljs-number">2</span>,<span class="hljs-number">2</span>,<span class="hljs-number">4</span>),imshow(abs_comb_x),title(<span class="hljs-string">'with abs x'</span>)</code></div><small class="shcb-language" id="shcb-language-3"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<p>Here is the combined Effect of both colors </p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter size-large"><a href="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png"><img data-attachment-id="514" data-permalink="https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/attachment/red_and_green/" data-orig-file="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png?fit=574%2C512&amp;ssl=1" data-orig-size="574,512" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="red_and_green" data-image-description="&lt;p&gt;Red and Green Color Segmentation&lt;/p&gt;
+" data-image-caption="&lt;p&gt;Red and Green color segmentation&lt;/p&gt;
+" data-medium-file="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png?fit=300%2C268&amp;ssl=1" data-large-file="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png?fit=574%2C512&amp;ssl=1" loading="lazy" width="574" height="512" src="./ColorSeg&amp;Thresh_files/red_and_green(1).png" alt="" class="wp-image-514" srcset="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png?w=574&amp;ssl=1 574w, https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_and_green.png?resize=300%2C268&amp;ssl=1 300w" sizes="(max-width: 574px) 100vw, 574px"></a><figcaption>Red and Green Combined</figcaption></figure></div>
+
+
+
+<h2>Remove Unwanted Yellow and Orange Color from RED </h2>
+
+
+
+<p>Now here is the final code which will remove unwanted yellow and Orange Color from the Image and after that we presented the final resultant Image. This image could be enhanced by applying some filtration on binary image but we leave this on to user and may be to our next tutorial. </p>
+
+
+<pre class="wp-block-code" aria-describedby="shcb-language-4" data-shcb-language-name="JavaScript" data-shcb-language-slug="javascript"><div><code class="hljs language-javascript">
+clear all; close all; clc;
+
+%%
+x       = imread(<span class="hljs-string">'peppers.png'</span>);
+red_x   = x(:,:,<span class="hljs-number">1</span>);
+green_x = x(:,:,<span class="hljs-number">2</span>);
+gray_x  = rgb2gray(x);
+
+%% GET ONLY RED OBJECTS
+sub_rg=imsubtract(red_x,green_x);
+sub_rg_gray = imsubtract(sub_rg,gray_x);
+only_red_bin = im2bw(sub_rg_gray,<span class="hljs-number">0.18</span>);
+
+
+%% Prepare and Apply Mask
+only_red_mask = im2bw(imcomplement( only_red_bin));
+only_red_mask = cat(<span class="hljs-number">3</span>,only_red_mask,only_red_mask,only_red_mask);
+only_red_x = x;
+only_red_x(only_red_mask)=<span class="hljs-number">0</span>;
+
+
+%% display Results
+figure,imshow(x),title(<span class="hljs-string">'original image'</span>),
+figure,imshow(only_red_x),title(<span class="hljs-string">'extracted objects'</span>);
+</code></div><small class="shcb-language" id="shcb-language-4"><span class="shcb-language__label">Code language:</span> <span class="shcb-language__name">JavaScript</span> <span class="shcb-language__paren">(</span><span class="shcb-language__slug">javascript</span><span class="shcb-language__paren">)</span></small></pre>
+
+
+<figure class="wp-block-image size-large"><img data-attachment-id="504" data-permalink="https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/attachment/red_color_detected/" data-orig-file="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_color_detected.png?fit=700%2C571&amp;ssl=1" data-orig-size="700,571" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="red_color_detected" data-image-description="&lt;p&gt;Final Result of Red Object Detection in MATLAB from peppers.png image comes with matlab image processing toolbox&lt;/p&gt;
+" data-image-caption="&lt;p&gt;Final Red Color Detection in MATLAB&lt;/p&gt;
+" data-medium-file="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_color_detected.png?fit=300%2C245&amp;ssl=1" data-large-file="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_color_detected.png?fit=640%2C522&amp;ssl=1" loading="lazy" width="640" height="522" src="./ColorSeg&amp;Thresh_files/red_color_detected.png" alt="Red color Detected in image" class="wp-image-504" srcset="https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_color_detected.png?w=700&amp;ssl=1 700w, https://i0.wp.com/www.fypsolutions.com/wp-content/uploads/2020/04/red_color_detected.png?resize=300%2C245&amp;ssl=1 300w" sizes="(max-width: 640px) 100vw, 640px" data-recalc-dims="1"><figcaption>Final Red Color Detection in MATLAB</figcaption></figure>
+
+
+
+<h2>Reference:</h2>
+
+
+
+<p>[1]The Motivated Engineer, “Image Processing in MATLAB Tutorial 2 – Color Thresholding,”&nbsp;<em>YouTube</em>. 2020. [Accessed: 04-Apr-2020].</p>
+
+
+
+<p>[2]“How to impose Binary mask on rgb color image –&nbsp; MATLAB Answers – MATLAB Central,”&nbsp;<em>Mathworks.com</em>, 2017. [Online]. Available: https://nl.mathworks.com/matlabcentral/answers/341305-how-to-impose-binary-mask-on-rgb-color-image. [Accessed: 04-Apr-2020].</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul data-sharing-events-added="true"><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-499" class="share-twitter sd-button share-icon" href="https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-499" class="share-facebook sd-button share-icon" href="https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/?share=facebook&amp;nb=1" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-end"></li></ul></div></div></div><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded" id="like-post-wrapper-141539593-499-6405a3c1ed6d2" data-src="https://widgets.wp.com/likes/#blog_id=141539593&amp;post_id=499&amp;origin=www.fypsolutions.com&amp;obj_id=141539593-499-6405a3c1ed6d2" data-name="like-post-frame-141539593-499-6405a3c1ed6d2" data-title="Like or Reblog"><h3 class="sd-title">Like this:</h3><div class="likes-widget-placeholder post-likes-widget-placeholder" style="height: 55px;"><span class="button"><span>Like</span></span> <span class="loading">Loading...</span></div><span class="sd-text-color"></span><a class="sd-link-color"></a></div>
+<div id="jp-relatedposts" class="jp-relatedposts" style="display: block;">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+<div class="jp-relatedposts-items jp-relatedposts-items-visual jp-relatedposts-grid "><div class="jp-relatedposts-post jp-relatedposts-post0 jp-relatedposts-post-thumbs" data-post-id="496" data-post-format="false"><a class="jp-relatedposts-post-a" href="https://www.fypsolutions.com/image-processing/rgb-to-hsv-conversion-in-matlab/?relatedposts_hit=1&amp;relatedposts_origin=499&amp;relatedposts_position=0" title="RGB to HSV Conversion in MATLAB" data-origin="499" data-position="0"><img class="jp-relatedposts-post-img" loading="lazy" src="./ColorSeg&amp;Thresh_files/hsv2rgb_hue_shift.png" width="350" height="200" alt=""></a><h4 class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://www.fypsolutions.com/image-processing/rgb-to-hsv-conversion-in-matlab/?relatedposts_hit=1&amp;relatedposts_origin=499&amp;relatedposts_position=0" title="RGB to HSV Conversion in MATLAB" data-origin="499" data-position="0">RGB to HSV Conversion in MATLAB</a></h4><p class="jp-relatedposts-post-excerpt">To achieve rgb to hsv conversion in matlab we can see that MATLAB Image processing toolbox provides functions for converting between different color spaces. Like to convert from RGB color space into HSV color space we have function called rgb2hsv() we need to pass RGB Image to this function and…</p></div><div class="jp-relatedposts-post jp-relatedposts-post1 jp-relatedposts-post-thumbs" data-post-id="518" data-post-format="false"><a class="jp-relatedposts-post-a" href="https://www.fypsolutions.com/opencv-python/findcontours-opencv-python-drawcontours-opencv-python/?relatedposts_hit=1&amp;relatedposts_origin=499&amp;relatedposts_position=1" title="Real Time Contours Detection findcontours  OpenCV Python" data-origin="499" data-position="1"><img class="jp-relatedposts-post-img" loading="lazy" src="./ColorSeg&amp;Thresh_files/detectcontours-opencv-python.png" width="350" height="200" alt="findcontours opencv python"></a><h4 class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://www.fypsolutions.com/opencv-python/findcontours-opencv-python-drawcontours-opencv-python/?relatedposts_hit=1&amp;relatedposts_origin=499&amp;relatedposts_position=1" title="Real Time Contours Detection findcontours  OpenCV Python" data-origin="499" data-position="1">Real Time Contours Detection findcontours  OpenCV Python</a></h4><p class="jp-relatedposts-post-excerpt">In this tutorial we are going to learn the usage of findcontours and drawcontours functions in OpenCV Python. We will create code for doing this in real time using Webcam. This code will help you in further image processing and computer vision projects where finding contours or Objects be the…</p></div><div class="jp-relatedposts-post jp-relatedposts-post2 jp-relatedposts-post-thumbs" data-post-id="654" data-post-format="false"><a class="jp-relatedposts-post-a" href="https://www.fypsolutions.com/c-sharp/how-to-use-aforge-net-in-c-sharp/?relatedposts_hit=1&amp;relatedposts_origin=499&amp;relatedposts_position=2" title="How to use AForge.Net  Framework in C#?" data-origin="499" data-position="2"><img class="jp-relatedposts-post-img" loading="lazy" src="./ColorSeg&amp;Thresh_files/aforge.net-download-page.png" width="350" height="200" alt=""></a><h4 class="jp-relatedposts-post-title"><a class="jp-relatedposts-post-a" href="https://www.fypsolutions.com/c-sharp/how-to-use-aforge-net-in-c-sharp/?relatedposts_hit=1&amp;relatedposts_origin=499&amp;relatedposts_position=2" title="How to use AForge.Net  Framework in C#?" data-origin="499" data-position="2">How to use AForge.Net  Framework in C#?</a></h4><p class="jp-relatedposts-post-excerpt">AForge.net is wonderful Image Processing and Computer vision framework for the C#.net Language. This framework comes with few power full machine learning tools as well. Because it is built on the dot net version 2.0, so it could work on previous Visual Studio versions as well. Just like we are…</p></div></div></div><!-- AI CONTENT END 1 -->
+                    </div>
+                    <div class="blog-pager-section">
+                                            </div>
+                    <div id="comments" class="comments-area">
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/#respond" style="display:none;">Cancel reply</a></small></h3><form action="https://www.fypsolutions.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate=""><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment">
+            <label for="comment">Comment</label>
+            <textarea required="" id="comment" name="comment" placeholder="Enter comment Message..." cols="45" rows="8" aria-required="true"></textarea>
+        </p><p class="comment-form-author">
+			<label for="author">Name*</label>
+			<input id="author" name="author" type="text" placeholder="Full Name" value="" size="30" aria-required="&#39;true&#39;">
+		</p>
+<p class="comment-form-email">
+			<label for="email">Email*</label>
+			<input id="email" name="email" type="email" placeholder="Email" value="" size="30" aria-required="&#39;true&#39;">
+		</p>
+<p class="comment-form-url">
+			<label for="url">Website</label>
+			<input id="url" name="url" type="url" placeholder="Website" value="" size="30">
+			</p>
+<p class="comment-subscription-form"><input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;"> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">Notify me of follow-up comments by email.</label></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;"> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label></p><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="499" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="1178f01cf0"></p><p style="display: none !important;"><label>Δ<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js" name="ak_js" value="1678091202724"><script>document.getElementById( "ak_js" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+	<p class="akismet_comment_form_privacy_notice">This site uses Akismet to reduce spam. <a href="https://akismet.com/privacy/" target="_blank" rel="nofollow noopener">Learn how your comment data is processed</a>.</p></div>
+                </div>        
+                           </div>
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                	<div id="search-2" class="widget_search about-us-blog"><div class="about-us-blog-sidebar"><form method="get" class="navbar-form" role="search" action="https://www.fypsolutions.com/">
+	<div class="input-group add-on">
+		<input type="text" id="srch-term" name="s" placeholder="Search" class="form-control" required="">
+		<div class="input-group-btn">
+			<button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+		</div>
+	</div>
+</form>
+</div></div>        <ul class="latest-post">
+    <div id="recent-posts-2" class="impressive_business_widget_recent_posts about-us-blog"><div class="about-us-blog-sidebar"><h4>Recent Projects</h4>                        <li>
+                    <div class="media">
+                    <div class="media-left">
+                    <a href="https://www.fypsolutions.com/examples/react-tailwind-css-sidebar-layout/">
+                                        </a>
+                    </div>
+                    <div class="media-body">
+                    <a href="https://www.fypsolutions.com/examples/react-tailwind-css-sidebar-layout/">React Tailwind CSS Sidebar Layout</a>
+                        <p>20 November 2022</p>
+                    </div>
+                    </div>
+                </li>
+                        <li>
+                    <div class="media">
+                    <div class="media-left">
+                    <a href="https://www.fypsolutions.com/react-js/react-map-array-of-objects/">
+                                        </a>
+                    </div>
+                    <div class="media-body">
+                    <a href="https://www.fypsolutions.com/react-js/react-map-array-of-objects/">React Map Array Of Objects</a>
+                        <p>13 November 2022</p>
+                    </div>
+                    </div>
+                </li>
+                        <li>
+                    <div class="media">
+                    <div class="media-left">
+                    <a href="https://www.fypsolutions.com/next-js/next-auth-with-credentials-using-typescript/">
+                                        </a>
+                    </div>
+                    <div class="media-body">
+                    <a href="https://www.fypsolutions.com/next-js/next-auth-with-credentials-using-typescript/">Next Auth with Credentials using TypeScript</a>
+                        <p>07 September 2022</p>
+                    </div>
+                    </div>
+                </li>
+                        <li>
+                    <div class="media">
+                    <div class="media-left">
+                    <a href="https://www.fypsolutions.com/examples/bootstrap/bootstrap-5-simple-login-page-example/">
+                    <img width="300" height="152" src="./ColorSeg&amp;Thresh_files/Bootstrap-Login-Page-min.png" class="img-responsive wp-post-image" alt="Bootstrap v5 Login example" loading="lazy" srcset="https://i1.wp.com/www.fypsolutions.com/wp-content/uploads/2022/07/Bootstrap-Login-Page-min.png?w=1259&amp;ssl=1 1259w, https://i1.wp.com/www.fypsolutions.com/wp-content/uploads/2022/07/Bootstrap-Login-Page-min.png?resize=300%2C152&amp;ssl=1 300w, https://i1.wp.com/www.fypsolutions.com/wp-content/uploads/2022/07/Bootstrap-Login-Page-min.png?resize=1024%2C518&amp;ssl=1 1024w, https://i1.wp.com/www.fypsolutions.com/wp-content/uploads/2022/07/Bootstrap-Login-Page-min.png?resize=768%2C389&amp;ssl=1 768w, https://i1.wp.com/www.fypsolutions.com/wp-content/uploads/2022/07/Bootstrap-Login-Page-min.png?resize=150%2C76&amp;ssl=1 150w" sizes="(max-width: 300px) 100vw, 300px" data-attachment-id="797" data-permalink="https://www.fypsolutions.com/examples/bootstrap/bootstrap-5-simple-login-page-example/attachment/bootstrap-login-page-min/" data-orig-file="https://i1.wp.com/www.fypsolutions.com/wp-content/uploads/2022/07/Bootstrap-Login-Page-min.png?fit=1259%2C637&amp;ssl=1" data-orig-size="1259,637" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Bootstrap Login Page-min" data-image-description="" data-image-caption="&lt;p&gt;Simple Login page created using Bootstrap&lt;/p&gt;
+" data-medium-file="https://i1.wp.com/www.fypsolutions.com/wp-content/uploads/2022/07/Bootstrap-Login-Page-min.png?fit=300%2C152&amp;ssl=1" data-large-file="https://i1.wp.com/www.fypsolutions.com/wp-content/uploads/2022/07/Bootstrap-Login-Page-min.png?fit=640%2C324&amp;ssl=1">                    </a>
+                    </div>
+                    <div class="media-body">
+                    <a href="https://www.fypsolutions.com/examples/bootstrap/bootstrap-5-simple-login-page-example/">Bootstrap 5 Simple Login Page Example</a>
+                        <p>27 July 2022</p>
+                    </div>
+                    </div>
+                </li>
+                        <li>
+                    <div class="media">
+                    <div class="media-left">
+                    <a href="https://www.fypsolutions.com/examples/pic-timer1-external-clock-frequency-counter/">
+                                        </a>
+                    </div>
+                    <div class="media-body">
+                    <a href="https://www.fypsolutions.com/examples/pic-timer1-external-clock-frequency-counter/">PIC Timer1 External Clock Frequency Counter</a>
+                        <p>28 February 2022</p>
+                    </div>
+                    </div>
+                </li>
+                </div></div>        </ul>
+      <div id="archives-3" class="widget_archive about-us-blog"><div class="about-us-blog-sidebar"><h4>Old Posts</h4>		<label class="screen-reader-text" for="archives-dropdown-3">Old Posts</label>
+		<select id="archives-dropdown-3" name="archive-dropdown">
+			
+			<option value="">Select Month</option>
+				<option value="https://www.fypsolutions.com/2022/11/"> November 2022 </option>
+	<option value="https://www.fypsolutions.com/2022/09/"> September 2022 </option>
+	<option value="https://www.fypsolutions.com/2022/07/"> July 2022 </option>
+	<option value="https://www.fypsolutions.com/2022/02/"> February 2022 </option>
+	<option value="https://www.fypsolutions.com/2022/01/"> January 2022 </option>
+	<option value="https://www.fypsolutions.com/2021/12/"> December 2021 </option>
+	<option value="https://www.fypsolutions.com/2021/11/"> November 2021 </option>
+	<option value="https://www.fypsolutions.com/2021/10/"> October 2021 </option>
+	<option value="https://www.fypsolutions.com/2021/09/"> September 2021 </option>
+	<option value="https://www.fypsolutions.com/2021/05/"> May 2021 </option>
+	<option value="https://www.fypsolutions.com/2021/04/"> April 2021 </option>
+	<option value="https://www.fypsolutions.com/2021/02/"> February 2021 </option>
+	<option value="https://www.fypsolutions.com/2021/01/"> January 2021 </option>
+	<option value="https://www.fypsolutions.com/2020/12/"> December 2020 </option>
+	<option value="https://www.fypsolutions.com/2020/11/"> November 2020 </option>
+	<option value="https://www.fypsolutions.com/2020/09/"> September 2020 </option>
+	<option value="https://www.fypsolutions.com/2020/08/"> August 2020 </option>
+	<option value="https://www.fypsolutions.com/2020/07/"> July 2020 </option>
+	<option value="https://www.fypsolutions.com/2020/06/"> June 2020 </option>
+	<option value="https://www.fypsolutions.com/2020/04/"> April 2020 </option>
+	<option value="https://www.fypsolutions.com/2020/03/"> March 2020 </option>
+	<option value="https://www.fypsolutions.com/2019/04/"> April 2019 </option>
+	<option value="https://www.fypsolutions.com/2019/01/"> January 2019 </option>
+	<option value="https://www.fypsolutions.com/2018/12/"> December 2018 </option>
+	<option value="https://www.fypsolutions.com/2018/11/"> November 2018 </option>
+	<option value="https://www.fypsolutions.com/2018/10/"> October 2018 </option>
+	<option value="https://www.fypsolutions.com/2018/08/"> August 2018 </option>
+	<option value="https://www.fypsolutions.com/2018/03/"> March 2018 </option>
+	<option value="https://www.fypsolutions.com/2018/02/"> February 2018 </option>
+	<option value="https://www.fypsolutions.com/2018/01/"> January 2018 </option>
+
+		</select>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "archives-dropdown-3" );
+	function onSelectChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value !== '' ) {
+			document.location.href = this.options[ this.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onSelectChange;
+})();
+/* ]]> */
+</script>
+			</div></div><div id="categories-2" class="widget_categories about-us-blog"><div class="about-us-blog-sidebar"><h4>Categories</h4>
+			<ul class="post-cat-list">
+					<li class="cat-item cat-item-51"><a href="https://www.fypsolutions.com/category/assembly-language/8051-8052/">8051-8052</a>
+</li>
+	<li class="cat-item cat-item-133"><a href="https://www.fypsolutions.com/category/android/">Android</a>
+</li>
+	<li class="cat-item cat-item-98"><a href="https://www.fypsolutions.com/category/arduino/">Arduino</a>
+</li>
+	<li class="cat-item cat-item-50"><a href="https://www.fypsolutions.com/category/assembly-language/">Assembly Language</a>
+</li>
+	<li class="cat-item cat-item-189"><a href="https://www.fypsolutions.com/category/atmega8/">Atmega8</a>
+</li>
+	<li class="cat-item cat-item-394"><a href="https://www.fypsolutions.com/category/basic-electronics/">Basic Electronics</a>
+</li>
+	<li class="cat-item cat-item-399"><a href="https://www.fypsolutions.com/category/examples/bootstrap/">Bootstrap</a>
+</li>
+	<li class="cat-item cat-item-279"><a href="https://www.fypsolutions.com/category/c-sharp/">C#</a>
+</li>
+	<li class="cat-item cat-item-48"><a href="https://www.fypsolutions.com/category/computer-vision/" title="Computer vision is never been so easy before">Computer Vision</a>
+</li>
+	<li class="cat-item cat-item-296"><a href="https://www.fypsolutions.com/category/esp8266/">ESP8266</a>
+</li>
+	<li class="cat-item cat-item-136"><a href="https://www.fypsolutions.com/category/examples/">Examples</a>
+</li>
+	<li class="cat-item cat-item-256"><a href="https://www.fypsolutions.com/category/android/flutter/">Flutter</a>
+</li>
+	<li class="cat-item cat-item-266"><a href="https://www.fypsolutions.com/category/fpga/">FPGA</a>
+</li>
+	<li class="cat-item cat-item-47"><a href="https://www.fypsolutions.com/category/image-processing/" title="Everything you need to know about Image Processing">Image Processing</a>
+</li>
+	<li class="cat-item cat-item-184"><a href="https://www.fypsolutions.com/category/java/">Java</a>
+</li>
+	<li class="cat-item cat-item-134"><a href="https://www.fypsolutions.com/category/android/kotlin/" title="Tutorials and projects related to newly developed language Kotlin. Reason to use this language is to have less verbose code and many more advance features which makes android development lot easier than ever.">Kotlin</a>
+</li>
+	<li class="cat-item cat-item-214"><a href="https://www.fypsolutions.com/category/matlab/">MATLAB</a>
+</li>
+	<li class="cat-item cat-item-104"><a href="https://www.fypsolutions.com/category/microchip-pic16/">Microchip PIC16</a>
+</li>
+	<li class="cat-item cat-item-244"><a href="https://www.fypsolutions.com/category/mysql/">MySQL</a>
+</li>
+	<li class="cat-item cat-item-403"><a href="https://www.fypsolutions.com/category/next-js/">Next js</a>
+</li>
+	<li class="cat-item cat-item-142"><a href="https://www.fypsolutions.com/category/nlp/">NLP</a>
+</li>
+	<li class="cat-item cat-item-223"><a href="https://www.fypsolutions.com/category/opencv-python/">OpenCV-Python</a>
+</li>
+	<li class="cat-item cat-item-243"><a href="https://www.fypsolutions.com/category/php/">PHP</a>
+</li>
+	<li class="cat-item cat-item-165"><a href="https://www.fypsolutions.com/category/pic-ccs/">PIC-CCS</a>
+</li>
+	<li class="cat-item cat-item-392"><a href="https://www.fypsolutions.com/category/project-ideas/">Project Ideas</a>
+</li>
+	<li class="cat-item cat-item-117"><a href="https://www.fypsolutions.com/category/python/">Python</a>
+</li>
+	<li class="cat-item cat-item-114"><a href="https://www.fypsolutions.com/category/tutorials/raspberry-pi/">Raspberry PI</a>
+</li>
+	<li class="cat-item cat-item-282"><a href="https://www.fypsolutions.com/category/react-js/">React-js</a>
+</li>
+	<li class="cat-item cat-item-178"><a href="https://www.fypsolutions.com/category/rpi-3/">RPi 3</a>
+</li>
+	<li class="cat-item cat-item-374"><a href="https://www.fypsolutions.com/category/selection-guide/">Selection Guide</a>
+</li>
+	<li class="cat-item cat-item-262"><a href="https://www.fypsolutions.com/category/stm32/">STM32</a>
+</li>
+	<li class="cat-item cat-item-71"><a href="https://www.fypsolutions.com/category/stm32f103/">STM32F103</a>
+</li>
+	<li class="cat-item cat-item-175"><a href="https://www.fypsolutions.com/category/assembly-language/stm8/">STM8</a>
+</li>
+	<li class="cat-item cat-item-213"><a href="https://www.fypsolutions.com/category/stm8-cosmic-c/">STM8 Cosmic C</a>
+</li>
+	<li class="cat-item cat-item-45"><a href="https://www.fypsolutions.com/category/tutorials/" title="Under this category we project best tutorials that will help you build your own amazing projects">Tutorials</a>
+</li>
+			</ul>
+
+			</div></div><div id="tag_cloud-2" class="widget_tag_cloud about-us-blog"><div class="about-us-blog-sidebar"><h4>Popular Tags</h4><div class="tagcloud"><a href="https://www.fypsolutions.com/tag/mu8051/" class="tag-cloud-link tag-link-37 tag-link-position-1" style="font-size: 8pt;" aria-label="8051 (1 item)">8051</a>
+<a href="https://www.fypsolutions.com/tag/android/" class="tag-cloud-link tag-link-32 tag-link-position-2" style="font-size: 8pt;" aria-label="Android (1 item)">Android</a>
+<a href="https://www.fypsolutions.com/tag/arduino/" class="tag-cloud-link tag-link-17 tag-link-position-3" style="font-size: 22pt;" aria-label="Arduino (4 items)">Arduino</a>
+<a href="https://www.fypsolutions.com/tag/arduino-temperature-meter/" class="tag-cloud-link tag-link-288 tag-link-position-4" style="font-size: 14.3pt;" aria-label="arduino temperature meter (2 items)">arduino temperature meter</a>
+<a href="https://www.fypsolutions.com/tag/arduino-temperature-sensor-project/" class="tag-cloud-link tag-link-293 tag-link-position-5" style="font-size: 14.3pt;" aria-label="arduino temperature sensor project (2 items)">arduino temperature sensor project</a>
+<a href="https://www.fypsolutions.com/tag/basic/" class="tag-cloud-link tag-link-103 tag-link-position-6" style="font-size: 18.5pt;" aria-label="basic (3 items)">basic</a>
+<a href="https://www.fypsolutions.com/tag/basic-code/" class="tag-cloud-link tag-link-110 tag-link-position-7" style="font-size: 18.5pt;" aria-label="basic-code (3 items)">basic-code</a>
+<a href="https://www.fypsolutions.com/tag/circuit/" class="tag-cloud-link tag-link-93 tag-link-position-8" style="font-size: 14.3pt;" aria-label="circuit (2 items)">circuit</a>
+<a href="https://www.fypsolutions.com/tag/computer-vision/" class="tag-cloud-link tag-link-14 tag-link-position-9" style="font-size: 8pt;" aria-label="Computer Vision (1 item)">Computer Vision</a>
+<a href="https://www.fypsolutions.com/tag/cosmic-c-stm8/" class="tag-cloud-link tag-link-317 tag-link-position-10" style="font-size: 14.3pt;" aria-label="cosmic c stm8 (2 items)">cosmic c stm8</a>
+<a href="https://www.fypsolutions.com/tag/cosmic-stm8s-c-compiler/" class="tag-cloud-link tag-link-316 tag-link-position-11" style="font-size: 14.3pt;" aria-label="cosmic stm8s c compiler (2 items)">cosmic stm8s c compiler</a>
+<a href="https://www.fypsolutions.com/tag/dsp/" class="tag-cloud-link tag-link-21 tag-link-position-12" style="font-size: 8pt;" aria-label="Digital Signal Processing (1 item)">Digital Signal Processing</a>
+<a href="https://www.fypsolutions.com/tag/ds18b20-esp8266/" class="tag-cloud-link tag-link-295 tag-link-position-13" style="font-size: 14.3pt;" aria-label="ds18b20 esp8266 (2 items)">ds18b20 esp8266</a>
+<a href="https://www.fypsolutions.com/tag/frequency/" class="tag-cloud-link tag-link-146 tag-link-position-14" style="font-size: 14.3pt;" aria-label="frequency (2 items)">frequency</a>
+<a href="https://www.fypsolutions.com/tag/google-sheets/" class="tag-cloud-link tag-link-299 tag-link-position-15" style="font-size: 8pt;" aria-label="google sheets (1 item)">google sheets</a>
+<a href="https://www.fypsolutions.com/tag/gpio/" class="tag-cloud-link tag-link-113 tag-link-position-16" style="font-size: 14.3pt;" aria-label="GPIO (2 items)">GPIO</a>
+<a href="https://www.fypsolutions.com/tag/hello-world/" class="tag-cloud-link tag-link-74 tag-link-position-17" style="font-size: 14.3pt;" aria-label="hello-world (2 items)">hello-world</a>
+<a href="https://www.fypsolutions.com/tag/image-processing/" class="tag-cloud-link tag-link-13 tag-link-position-18" style="font-size: 14.3pt;" aria-label="Image Processing (2 items)">Image Processing</a>
+<a href="https://www.fypsolutions.com/tag/iot/" class="tag-cloud-link tag-link-16 tag-link-position-19" style="font-size: 8pt;" aria-label="IoT (1 item)">IoT</a>
+<a href="https://www.fypsolutions.com/tag/json/" class="tag-cloud-link tag-link-119 tag-link-position-20" style="font-size: 14.3pt;" aria-label="JSON (2 items)">JSON</a>
+<a href="https://www.fypsolutions.com/tag/kotlin/" class="tag-cloud-link tag-link-33 tag-link-position-21" style="font-size: 8pt;" aria-label="Kotlin (1 item)">Kotlin</a>
+<a href="https://www.fypsolutions.com/tag/matlab/" class="tag-cloud-link tag-link-6 tag-link-position-22" style="font-size: 8pt;" aria-label="Matlab (1 item)">Matlab</a>
+<a href="https://www.fypsolutions.com/tag/mini-helping-code/" class="tag-cloud-link tag-link-112 tag-link-position-23" style="font-size: 18.5pt;" aria-label="mini-helping-code (3 items)">mini-helping-code</a>
+<a href="https://www.fypsolutions.com/tag/mini-projects/" class="tag-cloud-link tag-link-38 tag-link-position-24" style="font-size: 8pt;" aria-label="Mini Projects (1 item)">Mini Projects</a>
+<a href="https://www.fypsolutions.com/tag/nlp/" class="tag-cloud-link tag-link-143 tag-link-position-25" style="font-size: 14.3pt;" aria-label="NLP (2 items)">NLP</a>
+<a href="https://www.fypsolutions.com/tag/nodemcu-esp8266-google-sheets/" class="tag-cloud-link tag-link-301 tag-link-position-26" style="font-size: 8pt;" aria-label="nodemcu esp8266 google sheets (1 item)">nodemcu esp8266 google sheets</a>
+<a href="https://www.fypsolutions.com/tag/microchip-pic/" class="tag-cloud-link tag-link-35 tag-link-position-27" style="font-size: 14.3pt;" aria-label="PIC (2 items)">PIC</a>
+<a href="https://www.fypsolutions.com/tag/proteus-assembly-code/" class="tag-cloud-link tag-link-379 tag-link-position-28" style="font-size: 14.3pt;" aria-label="proteus assembly code (2 items)">proteus assembly code</a>
+<a href="https://www.fypsolutions.com/tag/python/" class="tag-cloud-link tag-link-118 tag-link-position-29" style="font-size: 22pt;" aria-label="python (4 items)">python</a>
+<a href="https://www.fypsolutions.com/tag/raspberry-pi/" class="tag-cloud-link tag-link-29 tag-link-position-30" style="font-size: 18.5pt;" aria-label="Raspberry PI (3 items)">Raspberry PI</a>
+<a href="https://www.fypsolutions.com/tag/stm8/" class="tag-cloud-link tag-link-176 tag-link-position-31" style="font-size: 22pt;" aria-label="STM8 (4 items)">STM8</a>
+<a href="https://www.fypsolutions.com/tag/stm8-8s003f3p6/" class="tag-cloud-link tag-link-353 tag-link-position-32" style="font-size: 18.5pt;" aria-label="stm8 8s003f3p6 (3 items)">stm8 8s003f3p6</a>
+<a href="https://www.fypsolutions.com/tag/stm8-assembly/" class="tag-cloud-link tag-link-304 tag-link-position-33" style="font-size: 14.3pt;" aria-label="stm8 assembly (2 items)">stm8 assembly</a>
+<a href="https://www.fypsolutions.com/tag/stm8-assembly-examples/" class="tag-cloud-link tag-link-305 tag-link-position-34" style="font-size: 14.3pt;" aria-label="stm8 assembly examples (2 items)">stm8 assembly examples</a>
+<a href="https://www.fypsolutions.com/tag/stm8-assembly-language/" class="tag-cloud-link tag-link-306 tag-link-position-35" style="font-size: 14.3pt;" aria-label="stm8 assembly language (2 items)">stm8 assembly language</a>
+<a href="https://www.fypsolutions.com/tag/stm8-basic/" class="tag-cloud-link tag-link-310 tag-link-position-36" style="font-size: 22pt;" aria-label="stm8 basic (4 items)">stm8 basic</a>
+<a href="https://www.fypsolutions.com/tag/stm8-blue-pill/" class="tag-cloud-link tag-link-309 tag-link-position-37" style="font-size: 14.3pt;" aria-label="stm8 blue pill (2 items)">stm8 blue pill</a>
+<a href="https://www.fypsolutions.com/tag/stm8-example-code/" class="tag-cloud-link tag-link-212 tag-link-position-38" style="font-size: 14.3pt;" aria-label="stm8 example code (2 items)">stm8 example code</a>
+<a href="https://www.fypsolutions.com/tag/stm8-programming/" class="tag-cloud-link tag-link-373 tag-link-position-39" style="font-size: 18.5pt;" aria-label="stm8 programming (3 items)">stm8 programming</a>
+<a href="https://www.fypsolutions.com/tag/stm8s/" class="tag-cloud-link tag-link-204 tag-link-position-40" style="font-size: 18.5pt;" aria-label="stm8s (3 items)">stm8s</a>
+<a href="https://www.fypsolutions.com/tag/stm8s003f3p6/" class="tag-cloud-link tag-link-354 tag-link-position-41" style="font-size: 18.5pt;" aria-label="stm8s003f3p6 (3 items)">stm8s003f3p6</a>
+<a href="https://www.fypsolutions.com/tag/stm8s103f3p6/" class="tag-cloud-link tag-link-355 tag-link-position-42" style="font-size: 22pt;" aria-label="stm8s103f3p6 (4 items)">stm8s103f3p6</a>
+<a href="https://www.fypsolutions.com/tag/stm8s-discovery-tutorial/" class="tag-cloud-link tag-link-372 tag-link-position-43" style="font-size: 14.3pt;" aria-label="stm8s discovery tutorial (2 items)">stm8s discovery tutorial</a>
+<a href="https://www.fypsolutions.com/tag/stm32/" class="tag-cloud-link tag-link-19 tag-link-position-44" style="font-size: 8pt;" aria-label="STM32 (1 item)">STM32</a>
+<a href="https://www.fypsolutions.com/tag/web-based/" class="tag-cloud-link tag-link-15 tag-link-position-45" style="font-size: 8pt;" aria-label="Web Based (1 item)">Web Based</a></div>
+</div></div>            </div>
+        </div>
+    </div>
+</section>
+			<section id="footer-section" data-aos="fadeOut" data-aos-offset="200" data-aos-duration="600">
+				<div class="container">
+					<div class="row">
+									        				            				            				            					</div>
+					<div class="footer-copy-text">
+						<ul class="footer-icon">
+								
+						</ul>
+						<p>FYP Solutions Powered By  <a href="https://voilathemes.com/wordpress-themes/impressive-business/" target="_blank">Impressive Business WordPress Theme</a></p>
+					</div>
+				</div>
+			</section>
+		
+<!-- <p class="small"> WassUp 1.9.4.5 timestamp: 2023-03-06 08:26:41AM UTC (01:26PM)<br />
+If above timestamp is not current time, this page is cached.</p> -->
+		<div id="jp-carousel-loading-overlay">
+			<div id="jp-carousel-loading-wrapper">
+				<span id="jp-carousel-library-loading">&nbsp;</span>
+			</div>
+		</div>
+		<div class="jp-carousel-overlay" style="display: none;">
+
+		<div class="jp-carousel-container">
+			<!-- The Carousel Swiper -->
+			<div class="jp-carousel-wrap swiper-container jp-carousel-swiper-container jp-carousel-transitions" itemscope="" itemtype="https://schema.org/ImageGallery">
+				<div class="jp-carousel swiper-wrapper"></div>
+				<div class="jp-swiper-button-prev swiper-button-prev">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskPrev" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="9" height="12">
+							<path d="M16.2072 16.59L11.6496 12L16.2072 7.41L14.8041 6L8.8335 12L14.8041 18L16.2072 16.59Z" fill="white"></path>
+						</mask>
+						<g mask="url(#maskPrev)">
+							<rect x="0.579102" width="23.8823" height="24" fill="#FFFFFF"></rect>
+						</g>
+					</svg>
+				</div>
+				<div class="jp-swiper-button-next swiper-button-next">
+					<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<mask id="maskNext" mask-type="alpha" maskUnits="userSpaceOnUse" x="8" y="6" width="8" height="12">
+							<path d="M8.59814 16.59L13.1557 12L8.59814 7.41L10.0012 6L15.9718 12L10.0012 18L8.59814 16.59Z" fill="white"></path>
+						</mask>
+						<g mask="url(#maskNext)">
+							<rect x="0.34375" width="23.8822" height="24" fill="#FFFFFF"></rect>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<!-- The main close buton -->
+			<div class="jp-carousel-close-hint">
+				<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<mask id="maskClose" mask-type="alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="15" height="14">
+						<path d="M19.3166 6.41L17.9135 5L12.3509 10.59L6.78834 5L5.38525 6.41L10.9478 12L5.38525 17.59L6.78834 19L12.3509 13.41L17.9135 19L19.3166 17.59L13.754 12L19.3166 6.41Z" fill="white"></path>
+					</mask>
+					<g mask="url(#maskClose)">
+						<rect x="0.409668" width="23.8823" height="24" fill="#FFFFFF"></rect>
+					</g>
+				</svg>
+			</div>
+			<!-- Image info, comments and meta -->
+			<div class="jp-carousel-info">
+				<div class="jp-carousel-info-footer">
+					<div class="jp-carousel-pagination-container">
+						<div class="jp-swiper-pagination swiper-pagination"></div>
+						<div class="jp-carousel-pagination"></div>
+					</div>
+					<div class="jp-carousel-photo-title-container">
+						<h2 class="jp-carousel-photo-caption"></h2>
+					</div>
+					<div class="jp-carousel-photo-icons-container">
+						<a href="https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/#" class="jp-carousel-icon-btn jp-carousel-icon-info" aria-label="Toggle photo metadata visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskInfo" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M12.7537 2C7.26076 2 2.80273 6.48 2.80273 12C2.80273 17.52 7.26076 22 12.7537 22C18.2466 22 22.7046 17.52 22.7046 12C22.7046 6.48 18.2466 2 12.7537 2ZM11.7586 7V9H13.7488V7H11.7586ZM11.7586 11V17H13.7488V11H11.7586ZM4.79292 12C4.79292 16.41 8.36531 20 12.7537 20C17.142 20 20.7144 16.41 20.7144 12C20.7144 7.59 17.142 4 12.7537 4C8.36531 4 4.79292 7.59 4.79292 12Z" fill="white"></path>
+									</mask>
+									<g mask="url(#maskInfo)">
+										<rect x="0.8125" width="23.8823" height="24" fill="#FFFFFF"></rect>
+									</g>
+								</svg>
+							</span>
+						</a>
+												<a href="https://www.fypsolutions.com/image-processing/matlab-color-segmentation-and-color-threshing/#" class="jp-carousel-icon-btn jp-carousel-icon-comments" aria-label="Toggle photo comments visibility">
+							<span class="jp-carousel-icon">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="maskComments" mask-type="alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M4.3271 2H20.2486C21.3432 2 22.2388 2.9 22.2388 4V16C22.2388 17.1 21.3432 18 20.2486 18H6.31729L2.33691 22V4C2.33691 2.9 3.2325 2 4.3271 2ZM6.31729 16H20.2486V4H4.3271V18L6.31729 16Z" fill="white"></path>
+									</mask>
+									<g mask="url(#maskComments)">
+										<rect x="0.34668" width="23.8823" height="24" fill="#FFFFFF"></rect>
+									</g>
+								</svg>
+
+								<span class="jp-carousel-has-comments-indicator" aria-label="This image has comments."></span>
+							</span>
+						</a>
+											</div>
+				</div>
+				<div class="jp-carousel-info-extra">
+					<div class="jp-carousel-info-content-wrapper">
+						<div class="jp-carousel-photo-title-container">
+							<h2 class="jp-carousel-photo-title"></h2>
+						</div>
+						<div class="jp-carousel-comments-wrapper">
+															<div id="jp-carousel-comments-loading">
+									<span>Loading Comments...</span>
+								</div>
+								<div class="jp-carousel-comments"></div>
+								<div id="jp-carousel-comment-form-container">
+									<span id="jp-carousel-comment-form-spinner">&nbsp;</span>
+									<div id="jp-carousel-comment-post-results"></div>
+																														<form id="jp-carousel-comment-form">
+												<label for="jp-carousel-comment-form-comment-field" class="screen-reader-text">Write a Comment...</label>
+												<textarea name="comment" class="jp-carousel-comment-form-field jp-carousel-comment-form-textarea" id="jp-carousel-comment-form-comment-field" placeholder="Write a Comment..."></textarea>
+												<div id="jp-carousel-comment-form-submit-and-info-wrapper">
+													<div id="jp-carousel-comment-form-commenting-as">
+																													<fieldset>
+																<label for="jp-carousel-comment-form-email-field">Email (Required)</label>
+																<input type="text" name="email" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-email-field">
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-author-field">Name (Required)</label>
+																<input type="text" name="author" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-author-field">
+															</fieldset>
+															<fieldset>
+																<label for="jp-carousel-comment-form-url-field">Website</label>
+																<input type="text" name="url" class="jp-carousel-comment-form-field jp-carousel-comment-form-text-field" id="jp-carousel-comment-form-url-field">
+															</fieldset>
+																											</div>
+													<input type="submit" name="submit" class="jp-carousel-comment-form-button" id="jp-carousel-comment-form-button-submit" value="Post Comment">
+												</div>
+											</form>
+																											</div>
+													</div>
+						<div class="jp-carousel-image-meta">
+							<div class="jp-carousel-title-and-caption">
+								<div class="jp-carousel-photo-info">
+									<h3 class="jp-carousel-caption" itemprop="caption description"></h3>
+								</div>
+
+								<div class="jp-carousel-photo-description"></div>
+							</div>
+							<ul class="jp-carousel-image-exif" style="display: none;"></ul>
+							<a class="jp-carousel-image-download" target="_blank" style="display: none;">
+								<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M5.84615 5V19H19.7775V12H21.7677V19C21.7677 20.1 20.8721 21 19.7775 21H5.84615C4.74159 21 3.85596 20.1 3.85596 19V5C3.85596 3.9 4.74159 3 5.84615 3H12.8118V5H5.84615ZM14.802 5V3H21.7677V10H19.7775V6.41L9.99569 16.24L8.59261 14.83L18.3744 5H14.802Z" fill="white"></path>
+									</mask>
+									<g mask="url(#mask0)">
+										<rect x="0.870605" width="23.8823" height="24" fill="#FFFFFF"></rect>
+									</g>
+								</svg>
+								<span class="jp-carousel-download-text"></span>
+							</a>
+							<div class="jp-carousel-image-map" style="display: none;"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div>
+		
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/www.fypsolutions.com\/image-processing\/matlab-color-segmentation-and-color-threshing\/":499};
+	</script>
+				<script type="text/javascript" src="./ColorSeg&amp;Thresh_files/photon.min.js.download" id="jetpack-photon-js"></script>
+<script type="text/javascript" src="./ColorSeg&amp;Thresh_files/wp-bibtex.js.download" id="WP-BibTeX-js"></script>
+<script type="text/javascript" src="./ColorSeg&amp;Thresh_files/comment-reply.min.js.download" id="comment-reply-js"></script>
+<script type="text/javascript" src="./ColorSeg&amp;Thresh_files/default.js.download" id="impressive-business-default-js-js"></script>
+<script type="text/javascript" src="./ColorSeg&amp;Thresh_files/wp-embed.min.js.download" id="wp-embed-js"></script>
+<script type="text/javascript" id="jetpack-carousel-js-extra">
+/* <![CDATA[ */
+var jetpackSwiperLibraryPath = {"url":"https:\/\/www.fypsolutions.com\/wp-content\/plugins\/jetpack\/_inc\/build\/carousel\/swiper-bundle.min.js"};
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/www.fypsolutions.com\/wp-admin\/admin-ajax.php","nonce":"6f58c3762c","display_exif":"1","display_comments":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/www.fypsolutions.com\/wp-login.php?redirect_to=https%3A%2F%2Fwww.fypsolutions.com%2Fimage-processing%2Fmatlab-color-segmentation-and-color-threshing%2F","blog_id":"1","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./ColorSeg&amp;Thresh_files/jetpack-carousel.min.js.download" id="jetpack-carousel-js"></script>
+<script type="text/javascript" src="./ColorSeg&amp;Thresh_files/postmessage.min.js.download" id="postmessage-js"></script>
+<script type="text/javascript" src="./ColorSeg&amp;Thresh_files/jquery.jetpack-resize.min.js.download" id="jetpack_resize-js"></script>
+<script type="text/javascript" src="./ColorSeg&amp;Thresh_files/queuehandler.min.js.download" id="jetpack_likes_queuehandler-js"></script>
+<script type="text/javascript" id="sharing-js-js-extra">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+/* ]]> */
+</script>
+<script async="true" src="./ColorSeg&amp;Thresh_files/saved_resource"></script><script type="text/javascript" src="./ColorSeg&amp;Thresh_files/sharing.min.js.download" id="sharing-js-js"></script>
+<script type="text/javascript" id="sharing-js-js-after">
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-twitter' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-twitter' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+						return false;
+					}
+				} );
+			} )();
+var windowOpen;
+			( function () {
+				function matches( el, sel ) {
+					return !! (
+						el.matches && el.matches( sel ) ||
+						el.msMatchesSelector && el.msMatchesSelector( sel )
+					);
+				}
+
+				document.body.addEventListener( 'click', function ( event ) {
+					if ( ! event.target ) {
+						return;
+					}
+
+					var el;
+					if ( matches( event.target, 'a.share-facebook' ) ) {
+						el = event.target;
+					} else if ( event.target.parentNode && matches( event.target.parentNode, 'a.share-facebook' ) ) {
+						el = event.target.parentNode;
+					}
+
+					if ( el ) {
+						event.preventDefault();
+
+						// If there's another sharing window open, close it.
+						if ( typeof windowOpen !== 'undefined' ) {
+							windowOpen.close();
+						}
+						windowOpen = window.open( el.getAttribute( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+						return false;
+					}
+				} );
+			} )();
+</script>
+	<iframe src="./ColorSeg&amp;Thresh_files/master.html" scrolling="no" id="likes-master" name="likes-master" style="display:none;"></iframe>
+	<div id="likes-other-gravatars"><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+	<script src="./ColorSeg&amp;Thresh_files/e-202310.js.download" defer=""></script>
+<script>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:10.3',blog:'141539593',post:'499',tz:'5',srv:'www.fypsolutions.com'} ]);
+	_stq.push([ 'clickTrackerInit', '141539593', '499' ]);
+</script>
+	
+</body></html>
