@@ -52,19 +52,45 @@
             <tr>
                 <td colspan = "2" id="AboutHeadingBody">
                     <h1 id="aboutpagemainheading"></h1>
+                    <script>
+                        let AboutUsMainHeading = "The Biography Of Jocelyn Atwell";
+                        document.getElementById("aboutpagemainheading").innerHTML = AboutUsMainHeading;
+                    </script>
                 </td>
             </tr>
 
             <tr>
                 <!--Background-->
-                <td class="AboutTD"><img src="../Jocelyn Atwell CodeTribe Bootcamp 2023/Assets/Images/Joc-1024x1536.jpg" class="AboutImg">
+                <td class="AboutTD"><img src="../Jocelyn Atwell CodeTribe Bootcamp 2023/Assets/Images/Joc1.jpg" class="AboutImg">
                 </td>
                 <td class="AboutTD">
                 <h2 id="backgroundheading"></h2>
+                <script>
+                    let BackgroundHeading = "Background";
+                    document.getElementById("backgroundheading").innerHTML = BackgroundHeading;
+                </script>
                 <br /><br />
                 <p id="backgroundpara1"></p>
+                <script>
+                    let BackgroundPara1 = " Jocelyn Atwell was born on the 25th of August 1999. She grew up in the small town of Roodepan on the outskirts of Kimberley. As a 23 year old, she identifies as an introvert. Her personality type is a peace-maker. She avoids conflict at all costs, however she is confrontational as well. She is strong-willed, stubborn, creative, inquisitive, determined and hardworking. <br />Her hobbies include: <br />";
+                    document.getElementById("backgroundpara1").innerHTML = BackgroundPara1;
+                </script>
                 <br />
-                <p id="MyHobbies">
+                <ul id="MyHobbies"></ul>
+                <script>
+                     let MyHobbiesList = new Array(
+                        {item:"Getting creative with art"},
+                        {item: "Dancing"},
+                        {item: "Skating"},
+                        {item: "Reading"}
+                    );
+                        let list3 = document.getElementById("MyHobbies");
+                        MyHobbiesList.forEach((item)=>{
+                        let li = document.createElement("li");
+                        li.innerText = item.item;
+                        list3.appendChild(li);
+                    })
+                </script>
                     <!--<ul>
                         <li>Getting creative with art:
                             <ul><li>Painting</li>
@@ -78,7 +104,26 @@
                 </p>
                 <br />
                     <p id="homepagepara3"></p>
-                    <p id="Attributes">
+                    <script>
+                        let HomePagePara3 = "My qualities are that I am always eager to learn, improve on my skills as well as to execute any task to the best of my ability. I am purpose driven and work well individually as well as in a group. Attributes that I could use to describe me are that I am a:";
+                        document.getElementById("homepagepara3").innerHTML = HomePagePara3;
+                    </script>
+                    <ul id="Attributes"></ul>
+                    <script>
+                        let AttributesList = new Array(
+                            {item: "Creative Thinker"},
+                            {item: "Service Oriented"},
+                            {item: "Teachable"}, 
+                            {item: "Learning"}, 
+                            {item: "Hard Worker"}
+                        );
+                     let list1 = document.getElementById("Attributes");
+                      AttributesList.forEach((item)=>{
+                       let li = document.createElement("li");
+                       li.innerText = item.item;
+                       list1.appendChild(li);
+                     })
+                    </script>
                         <!--<ul>
                             <li>Creative Thinker</li>
                             <li>Service Oriented</li>
@@ -88,7 +133,26 @@
                         </ul>-->
                     </p>
                     <p id="homepagepara4"></p>
-                    <p id="MyKeySkills">
+                    <script>
+                        let HomePagePara4 = "My key skills are:";
+                        document.getElementById("homepagepara4").innerHTML = HomePagePara4;
+                    </script>
+                    <ul id="MyKeySkills"></ul>
+                    <script>
+                        let MyKeySkillsList = new Array(
+                         {item: "Programming"},
+                         {item: "Communication"},
+                         {item: "Decision-Making"},
+                         {item: "Problem Solving"},
+                         {item: "Client Service"}
+                       );
+                        let list2 = document.getElementById("MyKeySkills");
+                        MyKeySkillsList.forEach((item)=>{
+                        let li = document.createElement("li");
+                        li.innerText = item.item;
+                        list2.appendChild(li);
+                    })
+                    </script>
                         <!--<ul>
                             <li>Programming</li>
                             <li>Communication</li>
@@ -104,27 +168,67 @@
                 <!--Education-->
                 <td class="AboutTD">
                     <h2 id="educationheading"></h2>
+                    <script>
+                        let EducationHeading = "Education";
+                        document.getElementById("educationheading").innerHTML = EducationHeading;
+                    </script>
                     <br />
                     <h4 id="highschoolheading"></h4>
                     <p id="highschoolpara"></p>
                     <h4 id="varsityheading"></h4>
-                    <p id="varistypara"></p>
+                    <p id="varsitypara"></p>
                     <h4 id="glicamheading"></h4>
                     <p id="glicampara"></p>
+                    <script>
+                        let HighSchoolHeading = "Kimberley Girls' High School&nbsp;&nbsp;&nbsp;2013-2017";
+                        document.getElementById("highschoolheading").innerHTML = HighSchoolHeading;
+                        let HighSchoolPara = "I attended Kimberley Girls' High School where I obtained a Bachelors pass for my matric. I passed with three distinctions, namely in Afrikaans First Additional Language (86%), Computer Applications Technology (84%) and Visual Arts (89%).";
+                        document.getElementById("highschoolpara").innerHTML = HighSchoolPara;
+                        let VarsityHeading = "Sol Plaaitje University&nbsp;&nbsp;&nbsp;2018-2021";
+                        document.getElementById("varsityheading").innerHTML = VarsityHeading;
+                        let VarsityPara = "I completed my tertiary education at Sol Plaaitje University where I graduated with my degree in Bsc Data Science.";
+                        document.getElementById("varsitypara").innerHTML = VarsityPara;
+                        let GlicamHeading = "Glicam Trading Enterprise&nbsp;&nbsp;&nbsp;2022";
+                        document.getElementById("glicamheading").innerHTML = GlicamHeading;
+                        let GlicamPara = "I completed a Basic Life Support and First Aid Procedure as well as a Garment Making course.";
+                        document.getElementById("glicampara").innerHTML = GlicamPara;
+                    </script>
                 </td>
-                <td class="AboutTD"><img src="../Jocelyn Atwell CodeTribe Bootcamp 2023/Assets/Images/GraduationJocelynAtwellPhotgraphy(260of353).jpg" class="AboutImg">
+                <td class="AboutTD"><img src="../Jocelyn Atwell CodeTribe Bootcamp 2023/Assets/Images/Graduation.jpg" class="AboutImg">
                 </td>
             </tr>
 
             <tr>
                 <!--Awards-->
-                <td class="AboutTD"><img src="../Jocelyn Atwell CodeTribe Bootcamp 2023/Assets/Images/Screenshot_20230206-160559_Facebook.jpg" class="AboutImg">
+                <td class="AboutTD"><img src="../Jocelyn Atwell CodeTribe Bootcamp 2023/Assets/Images/Joz3.jpg" class="AboutImg">
                 </td>
                 <td class="AboutTD">
                   <h2 id="awardsheading"></h2>
+                    <script>
+                    let AwardsHeading = "Awards";
+                    document.getElementById("awardsheading").innerHTML = AwardsHeading;
+                    </script>
                   <br /><br />
                   <p id="awardspara"></p>
-                  <p id="MyAwards"></p>
+                  <script>
+                    let AwardsPara = "There were a few awards I have received varying from academic achievement to my involvement in arts and culture. These are a few I could mention:";
+                    document.getElementById("awardspara").innerHTML = AwardsPara;
+                  </script>
+                  <ul id="MyAwards"></ul>
+                  <script>
+                    let AwardsList = new Array(
+                        {item: "I was the head girl at Pescodia Primary School in 2012"},
+                        {item: "Diamond Award at the MADDs Festival in 2015 for an art project"},
+                        {item: "I received an award for the most promising art student in 2017, and"},
+                        {item: "Half Colours for performing well in my academics in 2017"}
+                    );
+                    let list4 = document.getElementById("MyAwards");
+                        AwardsList.forEach((item)=>{
+                        let li = document.createElement("li");
+                        li.innerText = item.item;
+                        list4.appendChild(li);
+                        })
+                  </script>
                     <!--<p><ul>
                         <li>I was the head girl at Pescodia Primary School in 2012</li>
                         <li>Diamond Award at the MADDs Festival in 2015 for an art project</li>
@@ -138,25 +242,49 @@
             <tr>
                 <!--Work Experience-->
                 <td class="AboutTD">
-                    <h2 id="workexperienceheading"></h2>
+                    <h2 id="workingexperienceheading"></h2>
+                    <script>
+                        let WorkingExperienceHeading = "Working Experience";
+                        document.getElementById("workingexperienceheading").innerHTML = WorkingExperienceHeading;
+                    </script>
                     <br />
                     <br />
                     <h4 id="capptionheading"></h4>
+                    <script>
+                        let CapptionHeading = "Capption&nbsp;&nbsp;&nbsp;2022-2023";
+                        document.getElementById("capptionheading").innerHTML = CapptionHeading;
+                    </script>
                     <p id="capptionpara"></p>
+                    <script>
+                        let CapptionPara = " I am completing an IT internship with Capption which is a cloud-based solutions company. <br /> I used Sharepoint to develop and deploy working solutions and performed SharePoint administrative tasks. <br />I used Power BI to create visualisations on the working solutions data and embed them onto the working SharePoint solution. <br /> I used PowerApps and Dataverse to create a portal that allows external authorised users to make use of custom build database as well. <br /> One of the projects we completed was to create an Invoice Tracking System using Microsoft services tailor made for a Government Department.";
+                        document.getElementById("capptionpara").innerHTML = CapptionPara;
+                    </script>
                 </td>
-                <td class="AboutTD"><img src="../Jocelyn Atwell CodeTribe Bootcamp 2023/Assets/Images/Screenshot_20230206-160533_Facebook.jpg" class="AboutImg">
+                <td class="AboutTD"><img src="../Jocelyn Atwell CodeTribe Bootcamp 2023/Assets/Images/Joz2.jpg" class="AboutImg">
                 </td>
             </tr>
             <tr>
                 <td class="AboutTD">
                     <h4 id="skillsheading"></h4>
+                    <script>
+                        let SkillsHeading = "Skills";
+                        document.getElementById("skillsheading").innerHTML = SkillsHeading;
+                    </script>
                     <table id="skillsTable">
                         <tr>
                             <td class="skillTypeTD">
                                 <h6 id="typeheading"></h6>
+                                <script>
+                                    let TypeHeading = "Type";
+                                    document.getElementById("typeheading").innerHTML = TypeHeading;
+                                </script>
                             </td>
                             <td class="skillLevelTD">
-                            <h6 class="tooltip" id="skilllevelheading">
+                                <h6 class="tooltip" id="skilllevelheading">
+                                <script>
+                                    let SkillLevelHeading = "skilllevelheading";
+                                    document.getElementById("skilllevelheading").innerHTML = SkillLevelHeading;
+                                </script>
                             <span class="tooltiptext">Rating out of 5</span></h6>
                             </td>
                         </tr>
@@ -168,6 +296,21 @@
                             <td class="skillLevelTD">
                             <!--Python Skill Level-->
                                 <p id="pythonskillLevel" class="skillLevel" title="4/5"></p>
+                                <script>
+                                    let pythonLevel = 4.00;
+                                    document.getElementById("pythonskillLevel").innerHTML = pythonLevel;
+                                    var pythonLevelElement = document.getElementById("pythonskillLevel");
+                                    function setFontColor(skillLevelElement, skillLevel){
+                                        if (skillLevel == 1 || skillLevel == 2) {
+                                            skillLevelElement.style.color = "red";
+                                        } else if (skillLevel == 3) {
+                                            skillLevelElement.style.color = "yellow";
+                                        } else if (skillLevel == 4 || skillLevel == 5) {
+                                            skillLevelElement.style.color = "green";
+                                        }
+                                    }
+                                    setFontColor(pythonLevelElement, pythonLevel);
+                                </script>
                             </td>
                         </tr>
                         <tr>
@@ -178,6 +321,21 @@
                             <td class="skillLevelTD">
                             <!--R Studio Skill Level-->
                                 <p id= "rstudioskillLevel" class="skillLevel" title="3/5"></p>
+                                <script>
+                                    let rstudioLevel = 3.00;
+                                    document.getElementById("rstudioskillLevel").innerHTML = rstudioLevel;
+                                    var rstudioLevelElement = document.getElementById("rstudioskillLevel");
+                                    function setFontColor(skillLevelElement, skillLevel){
+                                        if (skillLevel == 1 || skillLevel == 2) {
+                                            skillLevelElement.style.color = "red";
+                                        } else if (skillLevel == 3) {
+                                            skillLevelElement.style.color = "yellow";
+                                        } else if (skillLevel == 4 || skillLevel == 5) {
+                                            skillLevelElement.style.color = "green";
+                                        }
+                                    }
+                                    setFontColor(rstudioLevelElement, rstudioLevel);
+                                </script>
                             </td>
                         </tr>
                         <tr>
@@ -188,6 +346,21 @@
                             <td class="skillTypeTD">
                             <!--Matlab Skill Level-->
                                 <p id="matlabskillLevel" class="skillLevel" title="4/5"></p>
+                                <script>
+                                    let matlabLevel = 4.00;
+                                    document.getElementById("matlabskillLevel").innerHTML = matlabLevel;
+                                    var matlabLevelElement = document.getElementById("matlabskillLevel");
+                                    function setFontColor(skillLevelElement, skillLevel){
+                                        if (skillLevel == 1 || skillLevel == 2) {
+                                            skillLevelElement.style.color = "red";
+                                        } else if (skillLevel == 3) {
+                                            skillLevelElement.style.color = "yellow";
+                                        } else if (skillLevel == 4 || skillLevel == 5) {
+                                            skillLevelElement.style.color = "green";
+                                        }
+                                    }
+                                    setFontColor(matlabLevelElement, matlabLevel);
+                                </script>
                             </td>
                         </tr>
                         <tr>
@@ -198,6 +371,21 @@
                             <td class="skillLevelTD">
                             <!--Power BI Level-->
                                 <p id="powerbiskillLevel" class="skillLevel" title="4/5"></p>
+                                <script>
+                                    let powerbiLevel = 4.00;
+                                    document.getElementById("powerbiskillLevel").innerHTML = powerbiLevel;
+                                    var powerbiLevelElement = document.getElementById("powerbiskillLevel");
+                                    function setFontColor(skillLevelElement, skillLevel){
+                                        if (skillLevel == 1 || skillLevel == 2) {
+                                            skillLevelElement.style.color = "red";
+                                        } else if (skillLevel == 3) {
+                                            skillLevelElement.style.color = "yellow";
+                                        } else if (skillLevel == 4 || skillLevel == 5) {
+                                            skillLevelElement.style.color = "green";
+                                        }
+                                    }
+                                    setFontColor(powerbiLevelElement, powerbiLevel);
+                                </script>
                             </td>
                         </tr>
                         <tr>
@@ -208,6 +396,21 @@
                             <td class="skillLevelTD">
                             <!--PowerApps Level-->
                                 <p id="powerappsskillLevel" class="skillLevel" title="4/5"></p>
+                                <script>
+                                    let powerappsLevel = 4.00;
+                                    document.getElementById("powerappsskillLevel").innerHTML = powerappsLevel;
+                                    var powerappsLevelElement = document.getElementById("powerappsskillLevel");
+                                    function setFontColor(skillLevelElement, skillLevel){
+                                        if (skillLevel == 1 || skillLevel == 2) {
+                                            skillLevelElement.style.color = "red";
+                                        } else if (skillLevel == 3) {
+                                            skillLevelElement.style.color = "yellow";
+                                        } else if (skillLevel == 4 || skillLevel == 5) {
+                                            skillLevelElement.style.color = "green";
+                                        }
+                                    }
+                                    setFontColor(powerappsLevelElement, powerappsLevel);
+                                </script>
                             </td>
                         </tr>
                         <tr>
@@ -218,6 +421,21 @@
                             <td class="skillLevelTD">
                             <!--Dataverse Level-->
                                 <p id="dataverseskillLevel" class="skillLevel" title="4/5"></p>
+                                <script>
+                                    let dataverseLevel = 4.00;
+                                    document.getElementById("dataverseskillLevel").innerHTML = dataverseLevel;
+                                    var dataverseLevelElement = document.getElementById("dataverseskillLevel");
+                                    function setFontColor(skillLevelElement, skillLevel){
+                                        if (skillLevel == 1 || skillLevel == 2) {
+                                            skillLevelElement.style.color = "red";
+                                        } else if (skillLevel == 3) {
+                                            skillLevelElement.style.color = "yellow";
+                                        } else if (skillLevel == 4 || skillLevel == 5) {
+                                            skillLevelElement.style.color = "green";
+                                        }
+                                    }
+                                    setFontColor(dataverseLevelElement, dataverseLevel);
+                                </script>
                             </td>
                         </tr>
                         <tr>
@@ -228,6 +446,21 @@
                             <td class="skillLevelTD">
                             <!--Sharepoint Skill Level-->
                                 <p id="sharepointskillLevel" class="skillLevel" title="5/5"></p>
+                                <script>
+                                    let sharepointLevel = 5.00;
+                                    document.getElementById("sharepointskillLevel").innerHTML = sharepointLevel;
+                                    var sharepointLevelElement = document.getElementById("sharepointskillLevel");
+                                    function setFontColor(skillLevelElement, skillLevel){
+                                        if (skillLevel == 1 || skillLevel == 2) {
+                                            skillLevelElement.style.color = "red";
+                                        } else if (skillLevel == 3) {
+                                            skillLevelElement.style.color = "yellow";
+                                        } else if (skillLevel == 4 || skillLevel == 5) {
+                                            skillLevelElement.style.color = "green";
+                                        }
+                                    }
+                                    setFontColor(sharepointLevelElement, sharepointLevel);
+                                </script>
                             </td>
                         </tr>
                         <tr>
@@ -238,6 +471,21 @@
                             <td class="skillLevelTD">
                             <!--HTML Skill Level-->
                                 <p id="htmlskillLevel" class="skillLevel" title="3/5"></p>
+                                <script>
+                                    let htmlLevel = 3.00;
+                                    document.getElementById("htmlskillLevel").innerHTML = htmlLevel;
+                                    var htmlLevelElement = document.getElementById("htmlskillLevel");
+                                    function setFontColor(skillLevelElement, skillLevel){
+                                        if (skillLevel == 1 || skillLevel == 2) {
+                                            skillLevelElement.style.color = "red";
+                                        } else if (skillLevel == 3) {
+                                            skillLevelElement.style.color = "yellow";
+                                        } else if (skillLevel == 4 || skillLevel == 5) {
+                                            skillLevelElement.style.color = "green";
+                                        }
+                                    }
+                                    setFontColor(htmlLevelElement, htmlLevel);
+                                </script>
                             </td>
                         </tr>
                         <tr>
@@ -248,6 +496,21 @@
                             <td class="skillLevelTD">
                             <!--CSS Skill Level-->
                                 <p id="cssskillLevel" class="skillLevel" title="3/5"></p>
+                                <script>
+                                    let cssLevel = 3.00;
+                                    document.getElementById("cssskillLevel").innerHTML = cssLevel;
+                                    var cssLevelElement = document.getElementById("cssskillLevel");
+                                    function setFontColor(skillLevelElement, skillLevel){
+                                        if (skillLevel == 1 || skillLevel == 2) {
+                                            skillLevelElement.style.color = "red";
+                                        } else if (skillLevel == 3) {
+                                            skillLevelElement.style.color = "yellow";
+                                        } else if (skillLevel == 4 || skillLevel == 5) {
+                                            skillLevelElement.style.color = "green";
+                                        }
+                                    }
+                                    setFontColor(cssLevelElement, cssLevel);
+                                </script>
                             </td>
                         </tr>
                         <tr>
@@ -258,6 +521,21 @@
                             <td class="skillLevelTD">
                             <!--JavaScript Skill Level-->
                                 <p id="javascriptskillLevel" class="skillLevel" title="2/5"></p>
+                                <script>
+                                    let javascriptLevel = 2.00;
+                                    document.getElementById("javascriptskillLevel").innerHTML = javascriptLevel;
+                                    var javascriptLevelElement = document.getElementById("javascriptskillLevel");
+                                    function setFontColor(skillLevelElement, skillLevel){
+                                        if (skillLevel == 1 || skillLevel == 2) {
+                                            skillLevelElement.style.color = "red";
+                                        } else if (skillLevel == 3) {
+                                            skillLevelElement.style.color = "yellow";
+                                        } else if (skillLevel == 4 || skillLevel == 5) {
+                                            skillLevelElement.style.color = "green";
+                                        }
+                                    }
+                                    setFontColor(javascriptLevelElement, javascriptLevel);
+                                </script>
                             </td>
                         </tr>
                     </table>
@@ -266,15 +544,61 @@
                 <!--My Projects-->
                 <td class="AboutTD">
                     <h4 id="projectsheading"></h4>
-                        <br />
-                        <p id="projectpara"></p>
-                        <br />
-                        <p id="projectslist"></p>
-                        <!--<ul>
-                            <li><p><div id="colourdetectionproject"></div></p></li>
-                            <li><p><div id="drowsinessdetectionproject"></div></p></li>
-                            <li><p><div id="inventorysimulationproject"></div></p></li>
-                        </ul>-->
+                    <script>
+                        let ProjectsHeading = "My Projects";
+                        document.getElementById("projectsheading").innerHTML = ProjectsHeading;
+                    </script>
+                    <br />
+                    <p id="projectpara"></p>
+                    <script>
+                        let ProjectPara = "There are a few projects I have done using various languages. Most, if not all of these projects were completed during my years at Sol Plaaitjie University. Below are three of the major projects I have created.";
+                        document.getElementById("projectpara").innerHTML = ProjectPara;
+                    </script>
+                    <br />
+                    <ul id="projectslist"></ul>
+                    <!--<ul>
+                        <li id="colourdetectionproject"></li>
+                        <li id="drowsinessdetectionproject"></li>
+                        <li id="inventorysimulationproject"></li>
+                    </ul>-->
+                    <script>
+                        let ColourDetectionProject = "Colour Detection Project";
+                        document.getElementById("colourdetectionproject").innerHTML = ColourDetectionProject;
+                        let DrowsinessDetectionProject = "Drowsiness Detection Project";
+                        document.getElementById("drowsinessdetectionproject").innerHTML = DrowsinessDetectionProject;
+                        let InventorySimulationProject = "Inventory Simulation Project";
+                        document.getElementById("inventorysimulationproject").innerHTML = InventorySimulationProject;
+                
+                        const link1 = document.createElement("a");
+                        link1.setAttribute("href", "https://github.com/JJAtwell/CodeTribe2023.git");
+                        link1.setAttribute("target", "_blank");
+                        link1.textContent = ColourDetectionProject.textContent;
+                        ColourDetectionProject.parentNode.replaceChild(link1,ColourDetectionProject);
+
+                        const link2 = document.createElement("a");
+                        link2.setAttribute("href", "https://github.com/JJAtwell/CodeTribe2023.git");
+                        link2.setAttribute("target", "_blank");
+                        link2.textContent = DrowsinessDetectionProject.textContent;
+                        DrowsinessDetectionProject.parentNode.replaceChild(link2,DrowsinessDetectionProject);
+
+                        const link3 = document.createElement("a");
+                        link3.setAttribute("href", "https://github.com/JJAtwell/CodeTribe2023.git");
+                        link3.setAttribute("target", "_blank");
+                        link3.textContent = InventorySimulationProject.textContent;
+                        InventorySimulationProject.parentNode.replaceChild(link3,InventorySimulationProject);
+
+                        let ProjectsList = new Array(
+                            {item: ColourDetectionProject},
+                            {item: DrowsinessDetectionProject},
+                            {item: InventorySimulationProject}
+                            );
+                            let list5 = document.getElementById("projectslist");
+                            ProjectsList.forEach((item)=>{
+                            let li = document.createElement("li");
+                            li.innerText = item.item;
+                            list5.appendChild(li);
+                        })
+                    </script>
                 </td> 
             </tr>
             <tr>
@@ -282,20 +606,60 @@
                 <!--References-->
                 <td colspan = "2" id="AboutRef">
                     <h2 id="referencesheading"></h2>
+                    <script>
+                        let ReferencesHeading = "References";
+                        document.getElementById("referencesheading").innerHTML = ReferencesHeading;
+                    </script>
                     <br /><br />
                     <h4 id="highschoolname"></h4>
-                    <p id="principal"><i></i></p><br /><br />
-                    <p  id="contactnumber"><b></b></p><p id="principalnumber"></p>
+                    <script>
+                        let HighSchoolName = "Kimberley Girls' High School";
+                        document.getElementById("highschoolname").innerHTML = HighSchoolName;
+                    </script>
+                    <p id="principal"></p>
+                    <script>
+                        let Principal = "Principal";
+                        document.getElementById("principal").innerHTML = Principal;
+                    </script>
+                    <p id="principalnumber"></p>
+                    <script>
+                        let PrincipalNumber = "Contact Number: +27 (0)53 832 1275";
+                        document.getElementById("principalnumber").innerHTML = PrincipalNumber;
+                    </script>
                     <br />
                     <br />
                     <h4 id="capptiondirectorlabel"></h4>
-                    <p id="capptiondirector"><i></i></p><br /><br />
-                    <p id="contactnumber"><b></b></p><p id="capptionnumber"></p>
+                    <script>
+                        let CapptionDirectorLabel = "Capption Director";
+                        document.getElementById("capptiondirectorlabel").innerHTML = CapptionDirectorLabel;
+                    </script>
+                    <p id="capptiondirector"></p>
+                    <script>
+                        let CapptionDirector = "Peter-Michael Salo";
+                        document.getElementById("capptiondirector").innerHTML = CapptionDirector;
+                    </script>
+                    <p id="capptionnumber"></p>
+                    <script>
+                        let CapptionNumber = "Contact Number: +27 (0)73 815 4187";
+                        document.getElementById("capptionnumber").innerHTML = CapptionNumber;
+                    </script>
                     <br />
                     <br />
                     <h4 id="relativelabel"></h4>
-                    <p id="relative"><i></i></p><br /><br />
-                    <p id="contactnumber"><b></b></p><p id="relativenumber"></p>
+                    <script>
+                        let RelativeLabel = "Relative";
+                        document.getElementById("relativelabel").innerHTML = RelativeLabel;
+                    </script>
+                    <p id="relative"></p>
+                    <script>
+                        let Relative = "Michiel Koopman";
+                        document.getElementById("relative").innerHTML = Relative;
+                    </script>
+                    <p id="relativenumber"></p>
+                    <script>
+                        let RelativeNumber = "Contact Number: +27 (0)74 761 3167";
+                        document.getElementById("relativenumber").innerHTML = RelativeNumber;
+                    </script>
                 </td>
             </tr>
         </table>
